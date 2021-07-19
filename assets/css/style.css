@@ -1,3 +1,5 @@
+
+
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
@@ -11,6 +13,10 @@ h4 {
     text-transform: uppercase;
 }
 
-body {
-    background-color: black;
+#logo {
+    width: 20em;
 }
+
+.navbar {
+    background-color: #000000;
+  }
