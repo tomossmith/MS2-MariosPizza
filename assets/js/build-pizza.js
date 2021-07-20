@@ -22,3 +22,16 @@ $(document).ready(function cheeseDropdownFunction(){
         $("#show"+ingredientVariable).show();
     });
  });
+
+ // Toppings Function  
+ $('input[name="pizza_topping"]').change(function() {
+    ingredientid = "#img_" + $(this).val();
+    //show image if the checkbox is checked
+    if($(this).prop('checked')) {
+       $(ingredientid).show();
+    }
+    //hides image if it's not checked
+    else {
+       $(ingredientid).hide();
+    }
+ });
