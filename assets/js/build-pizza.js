@@ -43,6 +43,7 @@ var sauceSubtotal = 0;
 
 // Sauce Subtotal
 $('#sauceType').change(function() {
+    var sauceSubtotal = 0;
     $('#sauceType').each(function() {
         if($(this).val() == 'Mariana') {
             sauceSubtotal += parseFloat(0.99);
@@ -57,3 +58,21 @@ $('#sauceType').change(function() {
     //console.log(cheeseSubtotal)
     $('#sauceSubtotal').text('£' + sauceSubtotal.toFixed(2));
  });
+
+ // Cheese Subtotal
+ $('.cheese').change(function() {
+    var cheeseSubtotal = 0;
+    $('.cheese').each(function() {
+        if($(this).val() == 'standardCheese') {
+            cheeseSubtotal += parseFloat(0.99);
+        }
+        else if($(this).val() == 'extraCheese') {
+          cheeseSubtotal += parseFloat(1.99);
+      }
+      else {
+       cheeseSubtotal += parseFloat(0.00)
+      }
+    });
+    //console.log(cheeseSubtotal)
+    $('#cheeseSubtotal').text('£' + cheeseSubtotal.toFixed(2));
+});
