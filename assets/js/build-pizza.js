@@ -35,3 +35,25 @@ $(document).ready(function cheeseDropdownFunction(){
        $(ingredientid).hide();
     }
  });
+
+  // PRICE CALCULATOR FUNCTIONS
+  // Global Price Function Variables
+var cheeseSubtotal = 0;
+var sauceSubtotal = 0;
+
+// Sauce Subtotal
+$('#sauceType').change(function() {
+    $('#sauceType').each(function() {
+        if($(this).val() == 'Mariana') {
+            sauceSubtotal += parseFloat(0.99);
+        }
+        else if($(this).val() == 'BBQ') {
+          sauceSubtotal += parseFloat(0.99);
+      }
+      else {
+       sauceSubtotal += parseFloat(0.00)
+      }
+    });
+    //console.log(cheeseSubtotal)
+    $('#sauceSubtotal').text('£' + sauceSubtotal.toFixed(2));
+ });
