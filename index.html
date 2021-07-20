@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <script src="assets/js/build-pizza.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,16 +58,15 @@
                 <img id="showBase" class="pizza-base" src="/assets/images/pizza_base.png" alt="Pizza Base">
 
                 <!--SAUCE IMAGES-->
-                <div id="showMariana" class="pizzaImages sauceImages"><img src="/assets/images/m-sauce.png"
-                        alt="Mariana" /></div>
-                <div id="showBBQ" class="pizzaImages sauceImages"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
-                
+                <div id="showMariana" class="sauceImages"><img src="/assets/images/m-sauce.png" alt="Mariana" /></div>
+                <div id="showBBQ" class="sauceImages"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
+
                 <!--CHEESE IMAGES-->
-                <div id="showstandardCheese" class="pizzaImages cheeseImages"><img src="/assets/images/standard-cheese.png"
+                <div id="showstandardCheese" class="cheeseImages"><img src="/assets/images/standard-cheese.png"
                         alt="Standard Cheese" /></div>
-                <div id="showextraCheese" class="pizzaImages cheeseImages"><img src="/assets/images/extra-cheese.png"
+                <div id="showextraCheese" class="cheeseImages"><img src="/assets/images/extra-cheese.png"
                         alt="Extra Cheese" /></div>
-                
+
                 <!--TOPPING IMAGES-->
                 <img id="img_1" class="toppingImages" src="/assets/images/pepperoni.png" alt="Pepperoni">
                 <img id="img_2" class="toppingImages" src="/assets/images/chillies.png" alt="Chillies">
@@ -105,7 +104,7 @@
                 </select>
                 <br>
                 <!--Select Sauce Type-->
-                <label for="sauceType" onChange="pizzaTotal();">
+                <label for="sauceType">
                     <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
                 </label>
                 <select name="sauceType" id="sauceType">
@@ -115,7 +114,7 @@
                 </select>
                 <br>
                 <!--Select Cheese Type-->
-                <label for="cheeseType" onChange="calculateCheeseCost(); pizzaTotal();">
+                <label for="cheeseType">
                     <h4 class="pizza-form-heading">Any cheese?</h4>
                 </label>
                 <select id="cheeseType" class="cheese">
@@ -129,19 +128,19 @@
                 <label for="toppings">
                     <h4 class="pizza-form-heading">What toppings?</h4>
                 </label>
-                <form id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal();">
-                    <label><input type="checkbox" id="topping_1" name="pizza_topping" value="1"
-                            class="source" />&nbsp; Pepperoni</label>
-                    <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2"
-                            class="source" />&nbsp; Chillies</label>
-                    <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3"
-                            class="source" />&nbsp; Ham</label>
-                    <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4"
-                            class="source" />&nbsp; Mushrooms</label>
-                    <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5"
-                            class="source" />&nbsp; Peppers</label>
-                    <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6"
-                            class="source" />&nbsp; Pineapple</label>
+                <form id="toppings" name='toppings'>
+                    <label><input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
+                        Pepperoni</label>
+                    <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
+                        Chillies</label>
+                    <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" />&nbsp;
+                        Ham</label>
+                    <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source" />&nbsp;
+                        Mushrooms</label>
+                    <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source" />&nbsp;
+                        Peppers</label>
+                    <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
+                        Pineapple</label>
 
             </div>
             <!--Col-->
@@ -159,5 +158,6 @@
 
 
 </body>
+<script src="assets/js/build-pizza.js"></script>
 
 </html>
