@@ -76,3 +76,9 @@ $('#sauceType').change(function() {
     //console.log(cheeseSubtotal)
     $('#cheeseSubtotal').text('£' + cheeseSubtotal.toFixed(2));
 });
+
+// Topping Subtotal
+function calculateToppingCost() {
+    var numberOfCheckedToppings = $('input:checkbox:checked').length;
+    var toppingSubtotal = numberOfCheckedToppings * 0.50
+    $('#toppingSubtotal').text('£' + toppingSubtotal.toFixed(2));}
