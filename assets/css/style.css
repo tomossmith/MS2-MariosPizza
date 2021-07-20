@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
@@ -7,10 +7,19 @@ h2,
 h3,
 h4 {
     margin: 0;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+p {
+    font-family: 'Otomanopee One', sans-serif;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.text-white {
+    color: #fff;
 }
 
 #logo {
@@ -35,6 +44,7 @@ html body {
 .nav-item {
     text-align: right;
     font-size: 0.8em;
+    font-family: 'Otomanopee One', sans-serif;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -49,5 +59,4 @@ html body {
 .navbar .active>a b {
     border-bottom: #FED8AD solid 0.2em;
 }
-
 
