@@ -17,6 +17,37 @@ h4 {
     width: 20em;
 }
 
-.navbar {
+html body {
     background-color: #000000;
   }
+
+
+/* NAVIGATION BAR */
+  .navbar {
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    margin-left: 1.5rem;
+}
+
+.nav-item {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #FFF;
+    padding-right: 3em;
+}
+
+.navbar a :hover {
+    color: green
+}
+
+.navbar .active>a b {
+    border-bottom: #FED8AD solid 0.2em;
+}
+
+
