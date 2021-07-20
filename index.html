@@ -2,14 +2,15 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mario's Pizza</title>
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mario's Pizza</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script src="assets/js/build-pizza.js"></script>
 </head>
+
 <body>
     <header>
         <!--NAVIGATION-->
@@ -34,8 +35,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="/mariospizza/index.html#build"><b>Build A Pizza</b></a>
+                                <a class="nav-link" href="/mariospizza/index.html#build"><b>Build A Pizza</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/mariospizza/index.html#locations"><b>Locations</b></a>
@@ -51,62 +51,105 @@
     </header>
 
     <div class="container-fluid">
-            <h1 class="text-white text-center">Build A Pizza!</h1>
+        <h1 class="text-white text-center">Build A Pizza!</h1>
         <div class="row">
             <div id="pizza-form" class="col-md-6">
-                <!--Pizza Base Image-->
+                <!--PIZZA BASE IMAGE-->
                 <img id="showBase" class="pizza-base" src="/assets/images/pizza_base.png" alt="Pizza Base">
-            </div> <!--Col-->
+
+                <!--SAUCE IMAGES-->
+                <div id="showMariana" class="pizzaImages sauceImages"><img src="/assets/images/m-sauce.png"
+                        alt="Mariana" /></div>
+                <div id="showBBQ" class="pizzaImages sauceImages"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
+                
+                <!--CHEESE IMAGES-->
+                <div id="showstandardCheese" class="pizzaImages cheeseImages"><img src="/assets/images/standard-cheese.png"
+                        alt="Standard Cheese" /></div>
+                <div id="showextraCheese" class="pizzaImages cheeseImages"><img src="/assets/images/extra-cheese.png"
+                        alt="Extra Cheese" /></div>
+                
+                <!--TOPPING IMAGES-->
+                <img id="img_1" class="toppingImages" src="/assets/images/pepperoni.png" alt="Pepperoni">
+                <img id="img_2" class="toppingImages" src="/assets/images/chillies.png" alt="Chillies">
+                <img id="img_3" class="toppingImages" src="/assets/images/ham.png" alt="Ham Pieces">
+                <img id="img_4" class="toppingImages" src="/assets/images/mushrooms.png" alt="Mushrooms">
+                <img id="img_5" class="toppingImages" src="/assets/images/peppers.png" alt="Peppers">
+                <img id="img_6" class="toppingImages" src="/assets/images/pineapple.png" alt="Pineapple">
+
+
+
+
+            </div>
+            <!--Col-->
             <div class="col-md-6">
                 <!--Select Pizza Size-->
-                    <label for="size"><h4 class="pizza-form-heading">Size: &nbsp;</h4></label>
-                    <select name="size" id="size">
-                      <option value="">What Size?</option>
-                      <option value="6">6"</option>
-                      <option value="9">9"</option>
-                      <option value="12">12"</option>
-                    </select>
-<br>
+                <label for="size">
+                    <h4 class="pizza-form-heading">Size: &nbsp;</h4>
+                </label>
+                <select name="size" id="size">
+                    <option value="">What Size?</option>
+                    <option value="6">6"</option>
+                    <option value="9">9"</option>
+                    <option value="12">12"</option>
+                </select>
+                <br>
                 <!--Select Base Type-->
-                <label for="baseType"><h4 class="pizza-form-heading">Crust: &nbsp;</h4></label>
-                        <select name="crust" id="crust">
-                            <option value="">Which Crust?</option>
-                            <option value="Thin Crust">Thin Crust</option>
-                            <option value="Deep Pan">Deep Pan</option>
-                            <option value="Stuffed Crust">Stuffed Crust</option>
-                          </select>
+                <label for="baseType">
+                    <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
+                </label>
+                <select name="crust" id="crust">
+                    <option value="">Which Crust?</option>
+                    <option value="Thin Crust">Thin Crust</option>
+                    <option value="Deep Pan">Deep Pan</option>
+                    <option value="Stuffed Crust">Stuffed Crust</option>
+                </select>
                 <br>
                 <!--Select Sauce Type-->
-                    <label for="sauceType" onChange="pizzaTotal();"><h4 class="pizza-form-heading">Sauce: &nbsp;</h4></label>
-                    <select name="sauceType" id="sauceType">
-                      <option>Which Sauce?</option>
-                      <option value="Mariana">Mariana</option>
-                      <option value="BBQ">BBQ</option>
-                    </select>
+                <label for="sauceType" onChange="pizzaTotal();">
+                    <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
+                </label>
+                <select name="sauceType" id="sauceType">
+                    <option>Which Sauce?</option>
+                    <option value="Mariana">Mariana</option>
+                    <option value="BBQ">BBQ</option>
+                </select>
                 <br>
                 <!--Select Cheese Type-->
-                    <label for="cheeseType" onChange="calculateCheeseCost(); pizzaTotal();"><h4 class="pizza-form-heading">Any cheese?</h4></label>
-                    <select id="cheeseType" class="cheese">
+                <label for="cheeseType" onChange="calculateCheeseCost(); pizzaTotal();">
+                    <h4 class="pizza-form-heading">Any cheese?</h4>
+                </label>
+                <select id="cheeseType" class="cheese">
                     <option>Add Cheese?</option>
                     <option>No Cheese</option>
                     <option value="standardCheese">Standard Cheese</option>
                     <option value="extraCheese">Extra Cheese</option>
-                    </select>
-            <br>
+                </select>
+                <br>
                 <!--Select Toppings-->
-                <label for="toppings"><h4 class="pizza-form-heading">What toppings?</h4></label>
+                <label for="toppings">
+                    <h4 class="pizza-form-heading">What toppings?</h4>
+                </label>
                 <form id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal();">
-                  <label><input  type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source"/>Pepperoni</label>
-                  <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source"/>Chillies</label>
-                  <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source"/>Ham</label>
-                  <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source"/>Mushrooms</label>
-                  <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source"/>Peppers</label>
-                  <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source"/>Pineapple</label>
+                    <label><input type="checkbox" id="topping_1" name="pizza_topping" value="1"
+                            class="source" />&nbsp; Pepperoni</label>
+                    <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2"
+                            class="source" />&nbsp; Chillies</label>
+                    <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3"
+                            class="source" />&nbsp; Ham</label>
+                    <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4"
+                            class="source" />&nbsp; Mushrooms</label>
+                    <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5"
+                            class="source" />&nbsp; Peppers</label>
+                    <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6"
+                            class="source" />&nbsp; Pineapple</label>
 
-            </div> <!--Col-->
-        </div> <!--Row-->
-    </div> <!--Container-Fluid-->
-    
+            </div>
+            <!--Col-->
+        </div>
+        <!--Row-->
+    </div>
+    <!--Container-Fluid-->
+
 
 
 
