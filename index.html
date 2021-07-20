@@ -58,16 +58,51 @@
                 <img id="showBase" class="pizza-base" src="/assets/images/pizza_base.png" alt="Pizza Base">
             </div> <!--Col-->
             <div class="col-md-6">
-                <form name="pizzasize">
-                    <label for="size"><h4>Choose your base size</h4></label>
-                    <br>
+                <!--Select Pizza Size-->
+                    <label for="size"><h4 class="pizza-form-heading">Size: &nbsp;</h4></label>
                     <select name="size" id="size">
-                      <option value=""></option>
+                      <option value="">What Size?</option>
                       <option value="6">6"</option>
                       <option value="9">9"</option>
                       <option value="12">12"</option>
                     </select>
-                  </form>
+<br>
+                <!--Select Base Type-->
+                <label for="baseType"><h4 class="pizza-form-heading">Crust: &nbsp;</h4></label>
+                        <select name="crust" id="crust">
+                            <option value="">Which Crust?</option>
+                            <option value="Thin Crust">Thin Crust</option>
+                            <option value="Deep Pan">Deep Pan</option>
+                            <option value="Stuffed Crust">Stuffed Crust</option>
+                          </select>
+                <br>
+                <!--Select Sauce Type-->
+                    <label for="sauceType" onChange="pizzaTotal();"><h4 class="pizza-form-heading">Sauce: &nbsp;</h4></label>
+                    <select name="sauceType" id="sauceType">
+                      <option>Which Sauce?</option>
+                      <option value="Mariana">Mariana</option>
+                      <option value="BBQ">BBQ</option>
+                    </select>
+                <br>
+                <!--Select Cheese Type-->
+                    <label for="cheeseType" onChange="calculateCheeseCost(); pizzaTotal();"><h4 class="pizza-form-heading">Any cheese?</h4></label>
+                    <select id="cheeseType" class="cheese">
+                    <option>Add Cheese?</option>
+                    <option>No Cheese</option>
+                    <option value="standardCheese">Standard Cheese</option>
+                    <option value="extraCheese">Extra Cheese</option>
+                    </select>
+            <br>
+                <!--Select Toppings-->
+                <label for="toppings"><h4 class="pizza-form-heading">What toppings?</h4></label>
+                <form id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal();">
+                  <label><input  type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source"/>Pepperoni</label>
+                  <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source"/>Chillies</label>
+                  <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source"/>Ham</label>
+                  <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source"/>Mushrooms</label>
+                  <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source"/>Peppers</label>
+                  <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source"/>Pineapple</label>
+
             </div> <!--Col-->
         </div> <!--Row-->
     </div> <!--Container-Fluid-->

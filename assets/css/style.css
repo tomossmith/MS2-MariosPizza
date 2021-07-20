@@ -18,10 +18,6 @@ p {
     text-transform: uppercase;
 }
 
-.text-white {
-    color: #fff;
-}
-
 #logo {
     width: 20em;
 }
@@ -60,3 +56,15 @@ html body {
     border-bottom: #FED8AD solid 0.2em;
 }
 
+/* Pizza Form */
+
+.pizza-form-heading {
+    font-family: 'Otomanopee One', sans-serif;
+    color: #fff;
+    font-size: 1em;
+}
+
+#toppings label {
+    color: #fff;
+    padding-left: 2em;
+}
