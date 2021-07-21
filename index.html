@@ -103,7 +103,7 @@
                 <label for="sauceType">
                     <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
                 </label>
-                <select name="sauceType" id="sauceType">
+                <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
                     <option>Which Sauce?</option>
                     <option value="Mariana">Mariana</option>
                     <option value="BBQ">BBQ</option>
@@ -113,7 +113,7 @@
                 <label for="cheeseType">
                     <h4 class="pizza-form-heading">Any cheese?</h4>
                 </label>
-                <select id="cheeseType" class="cheese">
+                <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
                     <option>Add Cheese?</option>
                     <option>No Cheese</option>
                     <option value="standardCheese">Standard Cheese</option>
@@ -124,7 +124,7 @@
                 <label for="toppings">
                     <h4 class="pizza-form-heading">What toppings?</h4>
                 </label>
-                <form id="toppings" name='toppings' onChange="calculateToppingCost()";>
+                <form id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()">
                     <label><input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
                         Pepperoni</label>
                     <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
@@ -139,11 +139,11 @@
                         Pineapple</label>
 
             <!--PRICE SECTION-->
-            <p class="pizza-form-heading">Sauce Price: <span id="sauceSubtotal"></span></p>
-            <p class="pizza-form-heading">Cheese Price: <span id="cheeseSubtotal"></span></p>
-            <p class="pizza-form-heading">Topping Price: <span id="toppingSubtotal"></span></p>
+            <p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
+            <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
+            <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
           
-            <p class="pizza-form-heading">Total Price: <span id="pizzaTotal"></span></p>
+            <p class="pizza-form-heading">Total Price: <span id="pizzaTotalCost"></span></p>
 
             </div>
             <!--Col-->
