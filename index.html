@@ -87,9 +87,9 @@
             </div>
             <!--Col-->
 
-            <div id="pizza-form" class="col-md-5 col-sm-12">
+            <div class="col-md-5 col-sm-12">
                 <h1 class="text-white text-center">Build A Pizza!</h1>
-                <form onsubmit="return sendMail(this);">
+                <form id="pizzaForm" onsubmit="return sendMail(this);">>
                 <!--Select Pizza Size-->
                 <label for="size">
                     <h4 class="pizza-form-heading">Size: &nbsp;</h4>
@@ -151,12 +151,17 @@
                     <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
                         Pineapple</label>
 
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <button type="submit" class="btn btn-secondary center-block">Order Pizza!</button>
+
                     <!--PRICE SECTION-->
-                    <p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
+                    <!--<p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
                     <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
                     <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
 
-                    <p class="pizza-form-heading">Pizza Price: <span id="pizzaTotalCost"></span></p>
+                    <p class="pizza-form-heading">Pizza Price: <span id="pizzaTotalCost"></span></p> -->
                 </form>
             </div>
             <!--Col-->
@@ -174,6 +179,7 @@
 
 
 </body>
+<script src="assets/js/sendEmail.js"></script>
 <script src="assets/js/build-pizza.js"></script>
 
 </html>
