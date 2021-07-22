@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Aqu5cOW3Yc4jCcdD7YZbC"); 
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -20,6 +29,7 @@
                     <a class="navbar-brand" href="/mariospizza/index.html">
                         <img id="logo" class="img-fluid" src="./assets/images/logo.png" alt="Mario's Pizza Logo">
                     </a>
+                    
                     <div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -57,12 +67,13 @@
                 <img id="showBase" class="pizza-base img-fluid" src="/assets/images/pizza_base.png" alt="Pizza Base">
 
                 <!--SAUCE IMAGES-->
-                <div id="showMariana" class="sauceImages img-fluid"><img src="/assets/images/m-sauce.png" alt="Mariana" /></div>
+                <div id="showMariana" class="sauceImages img-fluid"><img src="/assets/images/m-sauce.png"
+                        alt="Mariana" /></div>
                 <div id="showBBQ" class="sauceImages img-fluid"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
 
                 <!--CHEESE IMAGES-->
-                <div id="showstandardCheese" class="cheeseImages img-fluid"><img src="/assets/images/standard-cheese.png"
-                        alt="Standard Cheese" /></div>
+                <div id="showstandardCheese" class="cheeseImages img-fluid"><img
+                        src="/assets/images/standard-cheese.png" alt="Standard Cheese" /></div>
                 <div id="showextraCheese" class="cheeseImages img-fluid"><img src="/assets/images/extra-cheese.png"
                         alt="Extra Cheese" /></div>
 
@@ -73,10 +84,12 @@
                 <img id="img_4" class="toppingImages img-fluid" src="/assets/images/mushrooms.png" alt="Mushrooms">
                 <img id="img_5" class="toppingImages img-fluid" src="/assets/images/peppers.png" alt="Peppers">
                 <img id="img_6" class="toppingImages img-fluid" src="/assets/images/pineapple.png" alt="Pineapple">
-            </div><!--Col-->
+            </div>
+            <!--Col-->
 
             <div id="pizza-form" class="col-md-5 col-sm-12">
                 <h1 class="text-white text-center">Build A Pizza!</h1>
+                <form onsubmit="return sendMail(this);">
                 <!--Select Pizza Size-->
                 <label for="size">
                     <h4 class="pizza-form-heading">Size: &nbsp;</h4>
@@ -124,8 +137,8 @@
                 <label for="toppings">
                     <h4 class="pizza-form-heading">What toppings?</h4>
                 </label>
-                <form id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()">
-                    <label><input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
+                    <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()"></label>
+                    <input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
                         Pepperoni</label>
                     <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
                         Chillies</label>
@@ -138,13 +151,13 @@
                     <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
                         Pineapple</label>
 
-            <!--PRICE SECTION-->
-            <p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
-            <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
-            <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
-          
-            <p class="pizza-form-heading">Total Price: <span id="pizzaTotalCost"></span></p>
+                    <!--PRICE SECTION-->
+                    <p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
+                    <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
+                    <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
 
+                    <p class="pizza-form-heading">Pizza Price: <span id="pizzaTotalCost"></span></p>
+                </form>
             </div>
             <!--Col-->
         </div>
