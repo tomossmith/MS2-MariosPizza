@@ -91,3 +91,8 @@ html body {
     position: absolute;
     z-index: -7;
 }
+
+#map {
+    height: 50vh;
+    z-index: 10;
+  }

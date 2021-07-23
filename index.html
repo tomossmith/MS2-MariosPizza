@@ -14,7 +14,7 @@
     </script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("user_Aqu5cOW3Yc4jCcdD7YZbC"); 
+            emailjs.init("user_Aqu5cOW3Yc4jCcdD7YZbC");
         })();
     </script>
 
@@ -29,7 +29,7 @@
                     <a class="navbar-brand" href="/mariospizza/index.html">
                         <img id="logo" class="img-fluid" src="./assets/images/logo.png" alt="Mario's Pizza Logo">
                     </a>
-                    
+
                     <div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -90,56 +90,56 @@
             <div class="col-md-5 col-sm-12">
                 <h1 class="text-white text-center">Build A Pizza!</h1>
                 <form id="pizzaForm" onsubmit="return sendMail(this);">>
-                <!--Select Pizza Size-->
-                <label for="size">
-                    <h4 class="pizza-form-heading">Size: &nbsp;</h4>
-                </label>
-                <select name="size" id="size">
-                    <option value="">What Size?</option>
-                    <option value="6">6"</option>
-                    <option value="9">9"</option>
-                    <option value="12">12"</option>
-                </select>
-                <br>
-                <!--Select Base Type-->
-                <label for="baseType">
-                    <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
-                </label>
-                <select name="crust" id="crust">
-                    <option value="">Which Crust?</option>
-                    <option value="Thin Crust">Thin Crust</option>
-                    <option value="Deep Pan">Deep Pan</option>
-                    <option value="Stuffed Crust">Stuffed Crust</option>
-                </select>
-                <br>
-                <!--Select Sauce Type-->
-                <label for="sauceType">
-                    <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
-                </label>
-                <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
-                    <option>Which Sauce?</option>
-                    <option value="Mariana">Mariana</option>
-                    <option value="BBQ">BBQ</option>
-                </select>
-                <br>
-                <!--Select Cheese Type-->
-                <label for="cheeseType">
-                    <h4 class="pizza-form-heading">Any cheese?</h4>
-                </label>
-                <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
-                    <option>Add Cheese?</option>
-                    <option>No Cheese</option>
-                    <option value="standardCheese">Standard Cheese</option>
-                    <option value="extraCheese">Extra Cheese</option>
-                </select>
-                <br>
-                <!--Select Toppings-->
-                <label for="toppings">
-                    <h4 class="pizza-form-heading">What toppings?</h4>
-                </label>
+                    <!--Select Pizza Size-->
+                    <label for="size">
+                        <h4 class="pizza-form-heading">Size: &nbsp;</h4>
+                    </label>
+                    <select name="size" id="size">
+                        <option value="">What Size?</option>
+                        <option value="6">6"</option>
+                        <option value="9">9"</option>
+                        <option value="12">12"</option>
+                    </select>
+                    <br>
+                    <!--Select Base Type-->
+                    <label for="baseType">
+                        <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
+                    </label>
+                    <select name="crust" id="crust">
+                        <option value="">Which Crust?</option>
+                        <option value="Thin Crust">Thin Crust</option>
+                        <option value="Deep Pan">Deep Pan</option>
+                        <option value="Stuffed Crust">Stuffed Crust</option>
+                    </select>
+                    <br>
+                    <!--Select Sauce Type-->
+                    <label for="sauceType">
+                        <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
+                    </label>
+                    <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
+                        <option>Which Sauce?</option>
+                        <option value="Mariana">Mariana</option>
+                        <option value="BBQ">BBQ</option>
+                    </select>
+                    <br>
+                    <!--Select Cheese Type-->
+                    <label for="cheeseType">
+                        <h4 class="pizza-form-heading">Any cheese?</h4>
+                    </label>
+                    <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
+                        <option>Add Cheese?</option>
+                        <option>No Cheese</option>
+                        <option value="standardCheese">Standard Cheese</option>
+                        <option value="extraCheese">Extra Cheese</option>
+                    </select>
+                    <br>
+                    <!--Select Toppings-->
+                    <label for="toppings">
+                        <h4 class="pizza-form-heading">What toppings?</h4>
+                    </label>
                     <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()"></label>
                     <input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
-                        Pepperoni</label>
+                    Pepperoni</label>
                     <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
                         Chillies</label>
                     <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" />&nbsp;
@@ -151,9 +151,11 @@
                     <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
                         Pineapple</label>
 
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                    <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number"
+                        required />
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                        required />
                     <button type="submit" class="btn btn-secondary center-block">Order Pizza!</button>
 
                     <!--PRICE SECTION-->
@@ -170,16 +172,29 @@
     </div>
     <!--Container-Fluid-->
 
+    <div class="container-fluid">
+
+        <h1 class="text-white text-center">Locations</h1>
 
 
+        <div id="map"></div>
+
+    </div>
+    <!--Container-->
 
     <footer>
 
     </footer>
 
+    <script src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/build-pizza.js"></script>
+    <!--<script>var APIKey = "AIzaSyCSdNfrg7klSBxqZWkPJLU4N7mNPQpQphU"; </script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdNfrg7klSBxqZWkPJLU4N7mNPQpQphU&callback=initMap">
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 
 </body>
-<script src="assets/js/sendEmail.js"></script>
-<script src="assets/js/build-pizza.js"></script>
 
 </html>
