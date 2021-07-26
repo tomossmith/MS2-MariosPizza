@@ -60,131 +60,135 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 col-sm-12">
-                <!--PIZZA BASE IMAGE-->
-                <img id="showBase" class="pizza-base img-fluid" src="/assets/images/pizza_base.png" alt="Pizza Base">
+<!--BUILD A PIZZA SECTION-->
 
-                <!--SAUCE IMAGES-->
-                <div id="showMariana" class="sauceImages img-fluid"><img src="/assets/images/m-sauce.png"
-                        alt="Mariana" /></div>
-                <div id="showBBQ" class="sauceImages img-fluid"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
+<div class="container-fluid" id="build-pizza-section">
+    <div class="row">
+<!--Pizza Images-->
+        <div class="col-md-6">
+            <!--PIZZA BASE IMAGE-->
+            <img id="showBase" class="pizza-base img-fluid" src="/assets/images/pizza_base.png" alt="Pizza Base">
 
-                <!--CHEESE IMAGES-->
-                <div id="showstandardCheese" class="cheeseImages img-fluid"><img
-                        src="/assets/images/standard-cheese.png" alt="Standard Cheese" /></div>
-                <div id="showextraCheese" class="cheeseImages img-fluid"><img src="/assets/images/extra-cheese.png"
-                        alt="Extra Cheese" /></div>
+            <!--SAUCE IMAGES-->
+            <div id="showMariana" class="sauceImages img-fluid"><img src="/assets/images/m-sauce.png" alt="Mariana" /></div>
+            <div id="showBBQ" class="sauceImages img-fluid"><img src="/assets/images/b-sauce.png" alt="BBQ" /></div>
 
-                <!--TOPPING IMAGES-->
-                <img id="img_1" class="toppingImages img-fluid" src="/assets/images/pepperoni.png" alt="Pepperoni">
-                <img id="img_2" class="toppingImages img-fluid" src="/assets/images/chillies.png" alt="Chillies">
-                <img id="img_3" class="toppingImages img-fluid" src="/assets/images/ham.png" alt="Ham Pieces">
-                <img id="img_4" class="toppingImages img-fluid" src="/assets/images/mushrooms.png" alt="Mushrooms">
-                <img id="img_5" class="toppingImages img-fluid" src="/assets/images/peppers.png" alt="Peppers">
-                <img id="img_6" class="toppingImages img-fluid" src="/assets/images/pineapple.png" alt="Pineapple">
-            </div>
-            <!--Col-->
+            <!--CHEESE IMAGES-->
+            <div id="showstandardCheese" class="cheeseImages img-fluid"><img
+                    src="/assets/images/standard-cheese.png" alt="Standard Cheese" /></div>
+            <div id="showextraCheese" class="cheeseImages img-fluid"><img src="/assets/images/extra-cheese.png"
+                    alt="Extra Cheese" /></div>
 
-            <div class="col-md-5 col-sm-12">
-                <h1 class="text-white text-center">Build A Pizza!</h1>
-                <form id="pizzaForm" onsubmit="return sendMail(this);">>
-                    <!--Select Pizza Size-->
-                    <label for="size">
-                        <h4 class="pizza-form-heading">Size: &nbsp;</h4>
-                    </label>
-                    <select name="size" id="size">
-                        <option value="">What Size?</option>
-                        <option value="6">6"</option>
-                        <option value="9">9"</option>
-                        <option value="12">12"</option>
-                    </select>
-                    <br>
-                    <!--Select Base Type-->
-                    <label for="baseType">
-                        <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
-                    </label>
-                    <select name="crust" id="crust">
-                        <option value="">Which Crust?</option>
-                        <option value="Thin Crust">Thin Crust</option>
-                        <option value="Deep Pan">Deep Pan</option>
-                        <option value="Stuffed Crust">Stuffed Crust</option>
-                    </select>
-                    <br>
-                    <!--Select Sauce Type-->
-                    <label for="sauceType">
-                        <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
-                    </label>
-                    <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
-                        <option>Which Sauce?</option>
-                        <option value="Mariana">Mariana</option>
-                        <option value="BBQ">BBQ</option>
-                    </select>
-                    <br>
-                    <!--Select Cheese Type-->
-                    <label for="cheeseType">
-                        <h4 class="pizza-form-heading">Any cheese?</h4>
-                    </label>
-                    <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
-                        <option>Add Cheese?</option>
-                        <option>No Cheese</option>
-                        <option value="standardCheese">Standard Cheese</option>
-                        <option value="extraCheese">Extra Cheese</option>
-                    </select>
-                    <br>
-                    <!--Select Toppings-->
-                    <label for="toppings">
-                        <h4 class="pizza-form-heading">What toppings?</h4>
-                    </label>
-                    <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()"></label>
-                    <input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
-                    Pepperoni</label>
-                    <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
-                        Chillies</label>
-                    <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" />&nbsp;
-                        Ham</label>
-                    <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source" />&nbsp;
-                        Mushrooms</label>
-                    <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source" />&nbsp;
-                        Peppers</label>
-                    <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
-                        Pineapple</label>
+            <!--TOPPING IMAGES-->
+            <img id="img_1" class="toppingImages img-fluid" src="/assets/images/pepperoni.png" alt="Pepperoni">
+            <img id="img_2" class="toppingImages img-fluid" src="/assets/images/chillies.png" alt="Chillies">
+            <img id="img_3" class="toppingImages img-fluid" src="/assets/images/ham.png" alt="Ham Pieces">
+            <img id="img_4" class="toppingImages img-fluid" src="/assets/images/mushrooms.png" alt="Mushrooms">
+            <img id="img_5" class="toppingImages img-fluid" src="/assets/images/peppers.png" alt="Peppers">
+            <img id="img_6" class="toppingImages img-fluid" src="/assets/images/pineapple.png" alt="Pineapple">
+        </div>
+<!--Ingredients Form-->
+        <div class="col-md-6" id="pizza-form-section">
+            <h1 class="text-white text-center">Build A Pizza!</h1>
+            <form id="pizzaForm" onsubmit="return sendMail(this);">
+                <!--Select Pizza Size-->
+                <label for="size">
+                    <h4 class="pizza-form-heading">Size: &nbsp;</h4>
+                </label>
+                <select name="size" id="size">
+                    <option value="">What Size?</option>
+                    <option value="6">6"</option>
+                    <option value="9">9"</option>
+                    <option value="12">12"</option>
+                </select>
+                <br>
+                <!--Select Base Type-->
+                <label for="baseType">
+                    <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
+                </label>
+                <select name="crust" id="crust">
+                    <option value="">Which Crust?</option>
+                    <option value="Thin Crust">Thin Crust</option>
+                    <option value="Deep Pan">Deep Pan</option>
+                    <option value="Stuffed Crust">Stuffed Crust</option>
+                </select>
+                <br>
+                <!--Select Sauce Type-->
+                <label for="sauceType">
+                    <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
+                </label>
+                <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
+                    <option>Which Sauce?</option>
+                    <option value="Mariana">Mariana</option>
+                    <option value="BBQ">BBQ</option>
+                </select>
+                <br>
+                <!--Select Cheese Type-->
+                <label for="cheeseType">
+                    <h4 class="pizza-form-heading">Any cheese?</h4>
+                </label>
+                <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
+                    <option>Add Cheese?</option>
+                    <option>No Cheese</option>
+                    <option value="standardCheese">Standard Cheese</option>
+                    <option value="extraCheese">Extra Cheese</option>
+                </select>
+                <br>
+                <!--Select Toppings-->
+                <label for="toppings">
+                    <h4 class="pizza-form-heading">What toppings?</h4>
+                </label>
+                <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()"></label>
+                <input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" />&nbsp;
+                Pepperoni</label>
+                <label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" />&nbsp;
+                    Chillies</label>
+                <label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" />&nbsp;
+                    Ham</label>
+                <label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source" />&nbsp;
+                    Mushrooms</label>
+                <label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source" />&nbsp;
+                    Peppers</label>
+                <label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" />&nbsp;
+                    Pineapple</label>
 
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                    <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number"
-                        required />
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                        required />
-                    <button type="submit" class="btn btn-secondary center-block">Order Pizza!</button>
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number"
+                    required />
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                    required />
+                <button type="submit" class="btn btn-secondary center-block">Order Pizza!</button>
 
-                    <!--PRICE SECTION-->
-                    <!--<p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
-                    <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
-                    <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
 
-                    <p class="pizza-form-heading">Pizza Price: <span id="pizzaTotalCost"></span></p> -->
-                </form>
-            </div> <!--Col-->
-           
-        </div><!--Row-->
-        
-    </div><!--Container-Fluid-->
-    <br>
-    <br>
-    <br>
-    <br>
-    
+                <!--PRICE SECTION-->
+                <!--<p class="pizza-form-heading">Sauce Price: £ <span id="sauceSubtotal"></span></p>
+                <p class="pizza-form-heading">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
+                <p class="pizza-form-heading">Topping Price: £ <span id="toppingSubtotal"></span></p>
 
-    <div class="container">
+                <p class="pizza-form-heading">Pizza Price: <span id="pizzaTotalCost"></span></p> -->
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--LOCATIONS SECTION-->
+<!--
+     <div class="container-fluid">
 
         <h2 class="text-white text-center">Locations</h2>
         
         <div id="Map" style="width: 100%; height: 40em">
         </div>
+-->
     </div><!--Container-->
 
-    <!--ABOUT SECTION-->
+
+    
+<!--ABOUT SECTION-->
+<!--
     <div>
     <h2 class="text-white text-center">About Mario's</h2>
 </div>
@@ -197,9 +201,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim a nihil velit exercitationem adipisci hic? Praesentium quisquam odit earum eaque deserunt saepe repellat fugiat consequatur sint eveniet perspiciatis libero dolorem numquam commodi, rerum corporis, facere, similique consectetur itaque error! Eveniet qui ab odit ipsam! Magnam excepturi saepe quasi alias recusandae aliquid numquam odio nihil, natus reprehenderit deleniti. Accusamus maxime eum nihil ipsa dolorem? Modi, nihil! Rerum maxime fugiat, nemo doloremque sunt illum iusto molestiae, incidunt ad nulla quos dignissimos iure modi veritatis deserunt nisi. Dolorum fuga deserunt voluptates nisi officia consectetur et asperiores quam minus nulla odit veniam laborum repudiandae culpa, impedit, perferendis totam voluptate tenetur esse quo libero exercitationem consequatur reprehenderit quae. Eum in exercitationem odio et. Nam facere eos necessitatibus ad, nisi cum quidem, in maxime inventore nulla soluta ipsa assumenda reprehenderit, veritatis modi dolorem laborum. Fugiat sequi labore eligendi consequuntur perspiciatis accusamus? Tempora obcaecati inventore similique sed.</p>
     </section>
 </div>
+-->
 
 <footer>
-
+<!--
     <div class="col-lg-4 col-md-12">
         <h3 class="text-center text-white">
             Contact Us
@@ -231,6 +236,7 @@
         </div>
     </div>
 </footer>
+-->
 
     <script src="assets/js/sendEmail.js"></script>
     <script src="assets/js/maps.js"></script>
