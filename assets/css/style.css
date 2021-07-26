@@ -93,8 +93,6 @@ html body {
 }
 
 #map {
-    height: 80vh;
-    width: 80em;
     z-index: 10;
   }
 
