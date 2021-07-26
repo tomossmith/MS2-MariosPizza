@@ -1,4 +1,26 @@
 $( document ).ready(function() {
+    var img1 = document.getElementById("img_1")
+    var img2 = document.getElementById("img_2")
+    var img3 = document.getElementById("img_3")
+    var img4 = document.getElementById("img_4")
+    var img5 = document.getElementById("img_5")
+    var img6 = document.getElementById("img_6")
+    var img7 = document.getElementById("img_7")
+    var img8 = document.getElementById("img_8")
+    var img9 = document.getElementById("img_9")
+    var img10 = document.getElementById("img_10")
+    var img11 = document.getElementById("img_11")
+    $(img_1).hide();
+    $(img_2).hide();
+    $(img_3).hide();
+    $(img_4).hide();
+    $(img_5).hide();
+    $(img_6).hide();
+    $(img_7).hide();
+    $(img_8).hide();
+    $(img_9).hide();
+    $(img_10).hide();
+    $(img_11).hide();
     console.log( "document loaded" );
 });
 
@@ -24,7 +46,7 @@ $(document).ready(function cheeseDropdownFunction(){
  });
 
  // Toppings Function  
- $('input[name="pizza_topping"]').change(function() {
+ $('input[name="pizza_topping"]').change(function toppings() {
     ingredientid = "#img_" + $(this).val();
     //show image if the checkbox is checked
     if($(this).prop('checked')) {

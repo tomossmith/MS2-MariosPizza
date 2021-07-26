@@ -21,7 +21,7 @@ p {
 }
 
 #logo {
-    width: 25em;
+    width: 30em;
 }
 
 html body {
@@ -42,7 +42,7 @@ html body {
 
 .nav-item {
     text-align: right;
-    font-size: 1.5em;
+    font-size: 2vh;
     font-family: 'Otomanopee One', sans-serif;
     padding-left: 2em;
     margin-right: 2em;
@@ -72,34 +72,33 @@ html body {
     font-size: 1em;
 }
 
-#toppings label {
-    color: #fff;
-}
-
-.pizza-base {
-    z-index: -10;
-    padding-left: 2em;
-}
-
-.sauceImages {
-    display: none;
+.pizza-div {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .pizza-base {
+    position: relative;
+    top: 0;
+    z-index: -3;
+  }
+  .toppingImages {
     position: absolute;
-    top: 0em;
-    left: 3em;
-}
-
-.cheeseImages {
-    display: none;
+    display: block;
+    top: 0px;
+  }
+  .cheeseImages {
     position: absolute;
-    top: 0em;
-    left: 3em;
-}
-
-.toppingImages {
     display: none;
+    top: 0px;
+    z-index: -1;
+  }
+  .sauceImages {
     position: absolute;
-    left: 3em;
-}
+    display: none;
+    top: 0px;
+    z-index: -2;
+  }
 
 #pizza-form-section {
     padding: 2em;
