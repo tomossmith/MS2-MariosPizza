@@ -94,6 +94,7 @@ html body {
 
 #map {
     z-index: 10;
+
   }
 
  /* ABOUT */ 
@@ -113,6 +114,7 @@ html body {
 
   /*FOOTER */
 
-  .logo-footer {
-      width: 10em;
-  }
+  .social-icons {
+    text-decoration: none;
+    padding: 0.5em;
+}
