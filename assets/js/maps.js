@@ -1,3 +1,5 @@
+//Credit: https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
+
 var markers = [
   {
       "title": `Mario's Pizza - New York City`,

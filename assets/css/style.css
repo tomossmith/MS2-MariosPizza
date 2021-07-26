@@ -98,3 +98,23 @@ html body {
     z-index: 10;
   }
 
+ /* ABOUT */ 
+ #about-img {max-width: 100%}
+
+  .about-section {
+      width: 500px;
+      margin: 30px auto;
+  }
+  
+  .img-left {
+      width: 300px;
+      float: left;
+      margin: 0 15px 0;
+  }
+  
+
+  /*FOOTER */
+
+  .logo-footer {
+      width: 10em;
+  }
