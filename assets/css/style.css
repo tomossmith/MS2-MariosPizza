@@ -132,7 +132,14 @@ html body {
   
 
   /*FOOTER */
-
+.section-line {
+    height:2px;
+    padding: 0;
+    margin: 5px 0px;
+    border-width:0;
+    color: #FED8AD;
+    background-color:#FED8AD;
+}
   .social-icons {
     text-decoration: none;
     padding: 0.5em;
