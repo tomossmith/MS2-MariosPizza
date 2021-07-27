@@ -162,7 +162,7 @@ console.log(total);
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            alert("Thank You For Your Order, You will shortly receive an email confirmation.")
+            alert("Thank You For Your Order")
         },
         function(error) {
             console.log("FAILED", error);
