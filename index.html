@@ -63,7 +63,7 @@
 <div class="container img-fluid" id="build-pizza-section">
     <div class="row">
 <!--Pizza Images-->
-        <div class="pizza-div col-xl-6 col-lg-12 col-md-12">
+        <div class="pizza-div col-xl-7 col-lg-12 col-md-12">
             <!--PIZZA BASE IMAGE-->
             <img id="showBase" class="pizza-base" src="/assets/images/pizza_base.png" alt="Pizza Base">
 
@@ -89,14 +89,14 @@
             <img id="img_11" class="toppingImages" src="/assets/images/tomatoes.png" alt="Tomatoes">
         </div>
 <!--Ingredients Form-->
-        <div class="col-xl-6 col-lg-12 col-md-12" id="pizza-form-section">
+        <div class="col-xl-5 col-lg-12 col-md-12" id="pizza-form-section">
             <h1 class="text-white text-center">Build A Pizza!</h1>
             <form id="pizzaForm" onsubmit="return sendMail(this);">
                 <!--Select Pizza Size-->
                 <label for="size">
                     <h4 class="pizza-form-heading">Size: &nbsp;</h4>
                 </label>
-                <select name="size" id="size">
+                <select name="size" id="size" required>
                     <option value="">What Size?</option>
                     <option value="6">6"</option>
                     <option value="9">9"</option>
@@ -107,7 +107,7 @@
                 <label for="baseType">
                     <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
                 </label>
-                <select name="crust" id="crust">
+                <select name="crust" id="crust" required>
                     <option value="">Which Crust?</option>
                     <option value="Thin Crust">Thin Crust</option>
                     <option value="Deep Pan">Deep Pan</option>
@@ -137,26 +137,41 @@
                 <!--Select Toppings-->
                 <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()"></label>
 
-                <div class="row">
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" /> Pepperoni </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" /> Chillies </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" /> Ham </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source" /> Mushrooms </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source" /> Peppers </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" /> Pineapple </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_7" name="pizza_topping" value="7" class="source" /> Prawns</label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_8" name="pizza_topping" value="8" class="source" /> Italian Herbs </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_9" name="pizza_topping" value="9" class="source" /> Olives </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="10" class="source" /> Onions </label></div>
-                    <div class="col-lg-2 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
+                <div class="row text-white">
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_1" name="pizza_topping" value="1" class="source" /> Pepperoni </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_2" name="pizza_topping" value="2" class="source" /> Chillies </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_3" name="pizza_topping" value="3" class="source" /> Ham </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_4" name="pizza_topping" value="4" class="source" /> Mushrooms </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_5" name="pizza_topping" value="5" class="source" /> Peppers </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_6" name="pizza_topping" value="6" class="source" /> Pineapple </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_7" name="pizza_topping" value="7" class="source" /> Prawns</label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_8" name="pizza_topping" value="8" class="source" /> Italian Herbs </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_9" name="pizza_topping" value="9" class="source" /> Olives </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="10" class="source" /> Onions </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
                     </div>
-
+                <br>
                 <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                 <br>
                 <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number" required />
                 <br>
                 <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required />
                 <br>
+                <!--Select Store-->
+                <label for="size">
+                    <h4 class="pizza-form-heading">Collection Store: &nbsp;</h4>
+                </label>
+                <select name="store" id="store" required>
+                    <option value="">Which Store?</option>
+                    <option value="New York">New York</option>
+                    <option value="Store 2">Store 2</option>
+                    <option value="Store 3">Store 3</option>
+                </select>
+                <br>
+                <label for="time">
+                    <h4 class="pizza-form-heading">Collection Time: &nbsp;</h4>
+                </label>
+                <input type="datetime-local" id="time" name="time" required>
                 
 <div class="row">
 <div class="col-6">
