@@ -22,41 +22,8 @@
 </head>
 
 <body>
-    <header>
-        <!--NAVIGATION-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="navbar navbar-expand-md static-top">
-                    <a class="navbar-brand" href="/mariospizza/index.html">
-                        <img id="logo" class="img-fluid" src="./assets/images/logo.png" alt="Mario's Pizza Logo">
-                    </a>
 
-                    <div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-md-auto uppercase">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/mariospizza/index.html"><b>Home</b>
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/mariospizza/index.html#locations"><b>Locations</b></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/mariospizza/index.html#about"><b>About</b></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
 
 <!--BUILD A PIZZA SECTION-->
 
@@ -147,13 +114,13 @@
                     <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_8" name="pizza_topping" value="8" class="source" /> Italian Herbs </label></div>
                     <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_9" name="pizza_topping" value="9" class="source" /> Olives </label></div>
                     <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="10" class="source" /> Onions </label></div>
-                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_10" name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
+                    <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="topping_11" name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
                     </div>
                 </label>
                 <br>
                 <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                 <br>
-                <input type="number" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number" required />
+                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Contact Phone Number" required />
                 <br>
                 <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required />
                 <br>
@@ -171,7 +138,7 @@
                 <label for="time">
                     <h4 class="pizza-form-heading">Collection Time: &nbsp;</h4>
                 </label>
-                <input type="datetime-local" id="time" name="time" required>
+                <input type="time" id="time" name="time" required>
                 
 <div class="row">
 <div class="col-6">
@@ -201,7 +168,6 @@
 
 <br>
 <br>
-
 
 <!--LOCATIONS SECTION-->
 <hr class="section-line">
@@ -273,9 +239,13 @@
     </div>
 </footer>
 
+
+
+
     <script src="assets/js/sendEmail.js"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/build-pizza.js"></script>
+    <script src="assets/js/navbar-shrink.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdNfrg7klSBxqZWkPJLU4N7mNPQpQphU&"></script>
 
 

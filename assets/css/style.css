@@ -20,46 +20,9 @@ p {
     text-transform: uppercase;
 }
 
-#logo {
-    width: 30em;
-}
-
 html body {
     background-color: #000000;
   }
-
-
-/* NAVIGATION BAR */
-  .navbar {
-    width: 100%;
-    z-index: 10;
-    padding: 2em;
-}
-
-.navbar-brand {
-    margin-left: 1.5rem;
-}
-
-.nav-item {
-    text-align: right;
-    font-size: 2vh;
-    font-family: 'Otomanopee One', sans-serif;
-    padding-left: 2em;
-    margin-right: 2em;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #FFF;
-}
-
-
-.navbar a :hover {
-    color: green
-}
-
-.navbar .active>a b {
-    border-bottom: #FED8AD solid 0.2em;
-}
 
 /* Pizza Form */
 
