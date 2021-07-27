@@ -52,6 +52,7 @@ html body {
     color: #FFF;
 }
 
+
 .navbar a :hover {
     color: green
 }
@@ -106,6 +107,11 @@ html body {
     border-radius: 2em;
 }
 
+.totals {
+    display: none;
+}
+
+/* LOCATIONS */
 #map {
     z-index: 10;
 
@@ -115,8 +121,7 @@ html body {
  #about-img {max-width: 100%}
 
   .about-section {
-      width: 500px;
-      margin: 30px auto;
+      width: 100%;
   }
   
   .img-left {

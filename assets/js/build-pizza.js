@@ -24,6 +24,46 @@ $( document ).ready(function() {
     console.log( "document loaded" );
 });
 
+ // Size Subtotal
+ $('.size').change(function() {
+    var sizeSubtotal = 0.00;
+    $('.size').each(function() {
+        if($(this).val() == '6') {
+            sizeSubtotal += parseFloat(4.00);
+        }
+        else if($(this).val() == '9') {
+            sizeSubtotal += parseFloat(6.00);
+        }
+        else if($(this).val() == '12') {
+          sizeSubtotal += parseFloat(8.00);
+      }
+      else {
+       sizeSubtotal += parseFloat(0.00)
+      }
+    });
+    document.getElementById("sizeSubtotal").innerHTML = sizeSubtotal.toFixed(2);
+});
+
+ // Crust Subtotal
+ $('.crust').change(function() {
+    var crustSubtotal = 0.00;
+    $('.crust').each(function() {
+        if($(this).val() == 'Thin Crust') {
+            crustSubtotal += parseFloat(0.50);
+        }
+        else if($(this).val() == 'Deep Pan') {
+            crustSubtotal += parseFloat(0.75);
+        }
+        else if($(this).val() == 'Stuffed Crust') {
+          crustSubtotal += parseFloat(1.50);
+      }
+      else {
+       crustSubtotal += parseFloat(0.00)
+      }
+    });
+    document.getElementById("crustSubtotal").innerHTML = crustSubtotal.toFixed(2);
+});
+
 // Sauce Dropdown Function   
 $( document ).ready(function sauceDropdownFunction() {
     $('#sauceType').on('change', function () {
@@ -77,7 +117,7 @@ $('#sauceType').change(function() {
        sauceSubtotal += parseFloat(0.00)
       }
     });
-    //document.getElementById("sauceSubtotal").innerHTML = sauceSubtotal.toFixed(2);
+    document.getElementById("sauceSubtotal").innerHTML = sauceSubtotal.toFixed(2);
  });
 
  // Cheese Subtotal
@@ -97,26 +137,25 @@ $('#sauceType').change(function() {
        cheeseSubtotal += parseFloat(0.00)
       }
     });
-    //document.getElementById("cheeseSubtotal").innerHTML = cheeseSubtotal.toFixed(2);
+    document.getElementById("cheeseSubtotal").innerHTML = cheeseSubtotal.toFixed(2);
 });
 
 // Topping Subtotal
 function calculateToppingCost() {
     var numberOfCheckedToppings = $('input:checkbox:checked').length;
-    var toppingSubtotal = numberOfCheckedToppings * 0.50
-   // document.getElementById("toppingSubtotal").innerHTML = toppingSubtotal.toFixed(2);
-}
+    var toppingSubtotal = numberOfCheckedToppings * 0.50;
+   document.getElementById("toppingSubtotal").innerHTML = toppingSubtotal.toFixed(2);
+};
 
-
+//Pizza Total Cost
 function pizzaTotal() {
-val_1 = Number($('#toppingSubtotal').html()), 
-val_2 = Number($('#cheeseSubtotal').html()),
-val_3 = Number($('#sauceSubtotal').html());
+val_1 = Number($('#sizeSubtotal').html()),
+val_2 = Number($('#crustSubtotal').html()),
+val_3 = Number($('#toppingSubtotal').html()), 
+val_4 = Number($('#cheeseSubtotal').html()),
+val_5 = Number($('#sauceSubtotal').html());
 
-var total = 1 + val_1 + val_2 + val_3;
-console.log(val_1);
-console.log(val_2);
-console.log(val_3);
-console.log(total);
-//document.getElementById("pizzaTotalCost").innerHTML = total.toFixed(2);
+
+var total = 1 + val_1 + val_2 + val_3 + val_4 + val_5;
+document.getElementById("pizzaTotalCost").innerHTML = total.toFixed(2);
 }
