@@ -1,15 +1,15 @@
 $( document ).ready(function() {
-    var img1 = document.getElementById("img_1")
-    var img2 = document.getElementById("img_2")
-    var img3 = document.getElementById("img_3")
-    var img4 = document.getElementById("img_4")
-    var img5 = document.getElementById("img_5")
-    var img6 = document.getElementById("img_6")
-    var img7 = document.getElementById("img_7")
-    var img8 = document.getElementById("img_8")
-    var img9 = document.getElementById("img_9")
-    var img10 = document.getElementById("img_10")
-    var img11 = document.getElementById("img_11")
+    var img_1 = document.getElementById("img_1")
+    var img_2 = document.getElementById("img_2")
+    var img_3 = document.getElementById("img_3")
+    var img_4 = document.getElementById("img_4")
+    var img_5 = document.getElementById("img_5")
+    var img_6 = document.getElementById("img_6")
+    var img_7 = document.getElementById("img_7")
+    var img_8 = document.getElementById("img_8")
+    var img_9 = document.getElementById("img_9")
+    var img_10 = document.getElementById("img_10")
+    var img_11 = document.getElementById("img_11")
     $(img_1).hide();
     $(img_2).hide();
     $(img_3).hide();
@@ -29,17 +29,15 @@ $( document ).ready(function() {
     var sizeSubtotal = 0.00;
     $('.size').each(function() {
         if($(this).val() == '6') {
-            sizeSubtotal += parseFloat(4.00);
+            sizeSubtotal = parseFloat(4.00);
         }
         else if($(this).val() == '9') {
-            sizeSubtotal += parseFloat(6.00);
+            sizeSubtotal = parseFloat(6.00);
         }
         else if($(this).val() == '12') {
-          sizeSubtotal += parseFloat(8.00);
+          sizeSubtotal = parseFloat(8.00);
       }
-      else {
-       sizeSubtotal += parseFloat(0.00)
-      }
+
     });
     document.getElementById("sizeSubtotal").innerHTML = sizeSubtotal.toFixed(2);
 });
@@ -156,6 +154,6 @@ val_4 = Number($('#cheeseSubtotal').html()),
 val_5 = Number($('#sauceSubtotal').html());
 
 
-var total = 1 + val_1 + val_2 + val_3 + val_4 + val_5;
+var total = val_1 + val_2 + val_3 + val_4 + val_5;
 document.getElementById("pizzaTotalCost").innerHTML = total.toFixed(2);
 }
