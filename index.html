@@ -22,10 +22,48 @@
 
 <body>
 
+    <header>
 
+        <!--NAVIGATION-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar navbar-expand-lg navbar-dark static-top">
+                    <a class="navbar-brand" id="logo" href="/thefitnesscentre/index.html">
+                        <img src="./assets/images/logo.png" alt="Mario's Pizza Logo">
+                    </a>
+                    <div class="text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto uppercase">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/#home"><b>Home</b>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="/#location"><b>Locations</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#about"><b>About</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#contact"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 <!--BUILD A PIZZA SECTION-->
-
+<section id="home">
 <div class="container img-fluid" id="build-pizza-section">
     <div class="row">
 <!--Pizza Images-->
@@ -62,11 +100,12 @@
                 <label for="size">
                     <h4 class="pizza-form-heading">Size: &nbsp;</h4>
                 </label>
+                
                 <select name="size" class="size" id="size" onChange="pizzaTotal()" required>
-                    <option value="0">What Size?</option>
-                    <option value="6">6"</option>
-                    <option value="9">9"</option>
-                    <option value="12">12"</option>
+                    <option id="size-0" data-price="0" value="0">What Size?</option>
+                    <option id="size-6" data-price="6" value="6">6"</option>
+                    <option id="size-9" data-price="9" value="9">9"</option>
+                    <option id="size-12" data-price="12" value="12">12"</option>
                 </select>
                 <br>
                 <!--Select Base Type-->
@@ -152,42 +191,45 @@
 </div>
 
             </div>
-
-                <!--PRICE SECTION-->
-                
-                <p class="pizza-form-heading totals">Size Price: £ <span id="sizeSubtotal"></span></p>
-                <p class="pizza-form-heading totals">Crust Price: £ <span id="crustSubtotal"></span></p>
-                <p class="pizza-form-heading totals">Sauce Price: £ <span id="sauceSubtotal"></span></p>
-                <p class="pizza-form-heading totals">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
-                <p class="pizza-form-heading totals">Topping Price: £ <span id="toppingSubtotal"></span></p>
-                <p class="pizza-form-heading totals">Pizza Price: <span id="pizzaTotalCost"></span></p>
             </form>
+            <div>
+                <!--PRICE SECTION-->
+
+                <p class="pizza-form-heading totals">Size Price: £ <span id="sizeSubtotal"></span></p>
+
+                <p class="pizza-form-heading totals">Crust Price: £ <span id="crustSubtotal"></span></p>
+
+                <p class="pizza-form-heading totals">Sauce Price: £ <span id="sauceSubtotal"></span></p>
+
+                <p class="pizza-form-heading totals">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
+
+                <p class="pizza-form-heading totals">Topping Price: £ <span id="toppingSubtotal"></span></p></div>
         </div>
     </div>
 </div>
-
+</section>
 <br>
 <br>
 
 <!--LOCATIONS SECTION-->
 <hr class="section-line">
 <hr class="section-line">
-
+<section id="location">
      <div class="container">
-
         <h2 class="text-white text-center">Store Locations</h2>
         
         <div id="Map" style="width: 100%; height: 60em">
         </div>
     </div><!--Container-->
+</section>
+<br>
+<br>
 
-<br>
-<br>
     
 <!--ABOUT SECTION-->
 <hr class="section-line">
 <hr class="section-line">
-
+<section id="about">
     <div class="container">
     <h2 class="text-white text-center">About Mario's</h2>
         <div class="about-section text-white">
@@ -199,11 +241,11 @@
         </section>
         </div>
 </div>
-
+</section>
 <br>
 <br>
 
-<footer>
+<footer id="contact">
     <hr class="section-line">
     <hr class="section-line">
 
@@ -245,8 +287,7 @@
     <script src="assets/js/sendEmail.js"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/build-pizza.js"></script>
-    <script src="assets/js/navbar-shrink.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdNfrg7klSBxqZWkPJLU4N7mNPQpQphU&"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSdNfrg7klSBxqZWkPJLU4N7mNPQpQphU"></script>
 
 
 

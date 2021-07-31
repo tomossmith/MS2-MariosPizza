@@ -29,15 +29,17 @@ $( document ).ready(function() {
     var sizeSubtotal = 0.00;
     $('.size').each(function() {
         if($(this).val() == '6') {
-            sizeSubtotal = parseFloat(4.00);
+            sizeSubtotal += parseFloat(4.00);
         }
         else if($(this).val() == '9') {
-            sizeSubtotal = parseFloat(6.00);
+            sizeSubtotal += parseFloat(6.00);
         }
         else if($(this).val() == '12') {
-          sizeSubtotal = parseFloat(8.00);
+          sizeSubtotal += parseFloat(8.00);
       }
-
+      else {
+       sizeSubtotal += parseFloat(0.00)
+      }
     });
     document.getElementById("sizeSubtotal").innerHTML = sizeSubtotal.toFixed(2);
 });
@@ -147,10 +149,10 @@ function calculateToppingCost() {
 
 //Pizza Total Cost
 function pizzaTotal() {
-val_1 = Number($('#sizeSubtotal').html()),
-val_2 = Number($('#crustSubtotal').html()),
-val_3 = Number($('#toppingSubtotal').html()), 
-val_4 = Number($('#cheeseSubtotal').html()),
+val_1 = Number($('#sizeSubtotal').html());
+val_2 = Number($('#crustSubtotal').html());
+val_3 = Number($('#toppingSubtotal').html()); 
+val_4 = Number($('#cheeseSubtotal').html());
 val_5 = Number($('#sauceSubtotal').html());
 
 

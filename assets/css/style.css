@@ -24,6 +24,50 @@ html body {
     background-color: #000000;
   }
 
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+  border-bottom: #FED8AD solid 0.1em;
+}
+
+a.navbar-brand {
+  display: contents;
+}
+
+.navbar-brand {
+  margin-left: 1.5rem;
+}
+
+.nav-item {
+  text-align: right;
+  font-size: 1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  margin-right: 2em;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.navbar a :hover {
+  color: #FED8AD
+}
+
+.navbar .active>a b {
+  border-bottom: #FED8AD solid 0.2em;
+}
+
+#logo img {
+width: 20em;
+}
+
+
+
 /* Pizza Form */
 
 #build-pizza-section {
@@ -71,7 +115,7 @@ html body {
 }
 
 .totals {
-    display: none;
+    display:;
 }
 
 /* LOCATIONS */
