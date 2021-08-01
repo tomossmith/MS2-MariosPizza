@@ -66,6 +66,14 @@ a.navbar-brand {
 width: 20em;
 }
 
+.section-heading {
+  padding: 1em;
+}
+
+.pizza-icons {
+  color:#FED8AD;
+}
+
 
 
 /* Pizza Form */
@@ -147,7 +155,16 @@ width: 20em;
     color: #FED8AD;
     background-color:#FED8AD;
 }
+
+footer i {
+  color: #FED8AD;
+}
+
+footer a {
+  color: #fff;
+}
   .social-icons {
     text-decoration: none;
     padding: 0.5em;
+    margin-bottom: 2em;
 }
