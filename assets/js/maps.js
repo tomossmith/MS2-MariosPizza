@@ -1,35 +1,67 @@
 //Credit: https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
 
 var markers = [
+    {
+        "title": `Mario's Pizza - Little Italy, NYC`,
+        "lat": '40.71902502339173', 
+        "lng": '-73.99728568465896',
+        "description": `<h4>Mario's Little Italy</h4>
+        <br>
+        <br> <img src="./assets/images/little-italy.jpg" alt="Little Italy Store" style="width:20em;">
+        <br> <strong>Address:</strong> 34th St, New York, NY 10016, United States
+        <br> Our Little Italy store is the first store that we brought into the U.S.
+        <br> <strong>Telephone:</strong> +021 2431 4505
+        <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
+        <br>`
+  
+    },
   {
-      "title": `Mario's Pizza - New York City`,
-      "lat": '40.670',
-      "lng": '-73.893530',
-      "description": `<h1>Mario's Pizza</h1> Telephone: 555-2456`
+    "title": `Mario's Pizza - Louisiana`,
+    "lat": '30.94593894883351', 
+    "lng": '-91.24659293776425',
+    "description": `<h4>Mario's Louisiana</h4>
+    <br>
+    <br> <img src="./assets/images/louisiana.jpg" alt="Louisiana Store" style="width:20em;">
+    <br> <strong>Address:</strong> 6 Carrollton Ave, New Orleans, LA 70118, United States
+    <br> <strong>Telephone:</strong> +150 4866 1200
+    <br> <strong>Opening Hours:</strong> 11am - 1am / 7 Days a week.
+    <br>`
+},
+  {
+    "title": `Mario's Pizza - Fremont St, Las Vegas`,
+    "lat": '36.16149155438114', 
+    "lng": '-115.12233330745995',
+    "description": `<h4>Mario's Las Vegas</h4>
+    <br>
+    <br> <img src="./assets/images/lasvegas.jpg" alt="Las Vegas Store" style="width:20em;">
+    <br> <strong>Address:</strong> 19 Fremont St, Las Vegas, NV 89101, United States
+    <br> <strong>Telephone:</strong> +170 2386 9498
+    <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
+    <br>`
   },
   {
-      "title": 'Juhu Beach',
-      "lat": '19.0883595',
-      "lng": '72.82652380000002',
-      "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
+    "title": `Mario's Pizza - Chicago`,
+    "lat": '41.89593742607879',
+    "lng": '-87.62568495351836',
+    "description": `<h4>Mario's Chicago</h4>
+    <br>
+    <br> <img src="./assets/images/chicago.jpg" alt="Chicago Store" style="width:20em;">
+    <br> <strong>Address:</strong> 7 Rush St, Chicago, IL 60611, United States
+    <br> <strong>Telephone:</strong> +131 2951 0700
+    <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
+    <br>`
   },
   {
-      "title": 'Girgaum Beach',
-      "lat": '18.9542149',
-      "lng": '72.81203529999993',
-      "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
-  },
-  {
-      "title": 'Jijamata Udyan',
-      "lat": '18.979006',
-      "lng": '72.83388300000001',
-      "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
-  },
-  {
-      "title": 'Sanjay Gandhi National Park',
-      "lat": '19.2147067',
-      "lng": '72.91062020000004',
-      "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    "title": `Mario's Pizza - Seattle`,
+    "lat": '47.61020386532794',
+    "lng": '-122.33262647971314',
+    "description": `<h4>Mario's Seattle</h4>
+    <br>
+    <br> <img src="./assets/images/seattle.jpg" alt="Seattle Store" style="width:20em;">
+    <br> <strong>Address:</strong> 13 8th Ave, Seattle, WA 98101, United States
+    <br> <strong>Telephone:</strong> +120 6332 1299
+    <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
+    <br>`
   }
   ];
   window.onload = function () {
@@ -37,8 +69,8 @@ var markers = [
   }
   function LoadMap() {
       var mapOptions = {
-          center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
-          zoom: 10,
+          center: new google.maps.LatLng(39.75500275292877 , -101.28326905998865),
+          zoom: 4.5,
           mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var map = new google.maps.Map(document.getElementById("Map"), mapOptions);
@@ -59,7 +91,7 @@ var markers = [
           (function (marker, data) {
               google.maps.event.addListener(marker, "click", function (e) {
                   //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-                  infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                  infoWindow.setContent("<div style = 'width:300px;min-height:100px'>" + data.description + "</div>");
                   infoWindow.open(map, marker);
               });
           })(marker, data);
