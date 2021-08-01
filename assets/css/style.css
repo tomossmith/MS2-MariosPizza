@@ -8,21 +8,21 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-family: 'Otomanopee One', sans-serif;
+  margin: 0;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 p {
-    font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 html body {
-    background-color: #000;
-  }
+  background-color: #000;
+}
 
 /* Navigation */
 .navbar {
@@ -63,7 +63,7 @@ a.navbar-brand {
 }
 
 #logo img {
-width: 20em;
+  width: 20em;
 }
 
 .section-heading {
@@ -71,7 +71,7 @@ width: 20em;
 }
 
 .pizza-icons {
-  color:#FED8AD;
+  color: #FED8AD;
 }
 
 
@@ -79,87 +79,92 @@ width: 20em;
 /* Pizza Form */
 
 #build-pizza-section {
-    padding: 4em;
+  padding: 4em;
 }
 
 
 .pizza-form-heading {
-    font-family: 'Otomanopee One', sans-serif;
-    color: #fff;
-    font-size: 1em;
+  font-family: 'Otomanopee One', sans-serif;
+  color: #fff;
+  font-size: 1em;
 }
 
 .pizza-div {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-  .pizza-group{
-    padding-top: 5em;
-  }
+.pizza-group {
+  padding-top: 5em;
+}
 
-  .pizza-base {
-    position: relative;
-    top: 0;
-    z-index: -3;
-  }
-  .toppingImages {
-    position: absolute;
-    display: block;
-    top: 0px;
-  }
-  .cheeseImages {
-    position: absolute;
-    display: none;
-    top: 0px;
-    z-index: -1;
-  }
-  .sauceImages {
-    position: absolute;
-    display: none;
-    top: 0px;
-    z-index: -2;
-  }
+.pizza-base {
+  position: relative;
+  top: 0;
+  z-index: -3;
+}
+
+.toppingImages {
+  position: absolute;
+  display: block;
+  top: 0px;
+}
+
+.cheeseImages {
+  position: absolute;
+  display: none;
+  top: 0px;
+  z-index: -1;
+}
+
+.sauceImages {
+  position: absolute;
+  display: none;
+  top: 0px;
+  z-index: -2;
+}
 
 #pizza-form-section {
-    padding: 1em;
-    border: #FED8AD solid 0.2em;
-    border-radius: 2em;
+  padding: 1em;
+  border: #FED8AD solid 0.2em;
+  border-radius: 2em;
 }
 
 .totals {
-    display:;
+  display: ;
 }
 
 /* LOCATIONS */
 #map {
-    z-index: 10;
+  z-index: 10;
 
-  }
+}
 
- /* ABOUT */ 
- #about-img {max-width: 100%}
+/* ABOUT */
+#about-img {
+  max-width: 100%
+}
 
-  .about-section {
-      width: 100%;
-  }
-  
-  .img-left {
-      width: 300px;
-      float: left;
-      margin: 0 15px 0;
-  }
-  
+.about-section {
+  width: 100%;
+}
 
-  /*FOOTER */
+.img-left {
+  width: 300px;
+  float: left;
+  margin: 0 15px 0;
+}
+
+
+/*FOOTER */
 .section-line {
-    height:2px;
-    padding: 0;
-    margin: 5px 0px;
-    border-width:0;
-    color: #FED8AD;
-    background-color:#FED8AD;
+  height: 2px;
+  padding: 0;
+  margin: 5px 0px;
+  border-width: 0;
+  color: #FED8AD;
+  background-color: #FED8AD;
 }
 
 footer i {
@@ -169,8 +174,9 @@ footer i {
 footer a {
   color: #fff;
 }
-  .social-icons {
-    text-decoration: none;
-    padding: 0.5em;
-    margin-bottom: 2em;
+
+.social-icons {
+  text-decoration: none;
+  padding: 0.5em;
+  margin-bottom: 2em;
 }
