@@ -106,10 +106,10 @@
                         </label>
 
                         <select name="size" class="size" id="size" onChange="pizzaTotal()" required>
-                            <option id="size-0" data-price="0" value="0">What Size?</option>
-                            <option id="size-6" data-price="6" value="6">6"</option>
-                            <option id="size-9" data-price="9" value="9">9"</option>
-                            <option id="size-12" data-price="12" value="12">12"</option>
+                            <option id="size-0" value="0">What Size?</option>
+                            <option id="size-6" value="4.00">6"</option>
+                            <option id="size-9" value="6.00">9"</option>
+                            <option id="size-12" value="8.00">12"</option>
                         </select>
                         <br>
                         <!--Select Base Type-->
@@ -118,9 +118,9 @@
                         </label>
                         <select name="crust" id="crust" class="crust" onChange="pizzaTotal()" required>
                             <option value="">Which Crust?</option>
-                            <option value="Thin Crust">Thin Crust</option>
-                            <option value="Deep Pan">Deep Pan</option>
-                            <option value="Stuffed Crust">Stuffed Crust</option>
+                            <option value="0.50">Thin Crust</option>
+                            <option value="0.75">Deep Pan</option>
+                            <option value="1.50">Stuffed Crust</option>
                         </select>
                         <br>
                         <!--Select Sauce Type-->
@@ -128,21 +128,21 @@
                             <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
                         </label>
                         <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
-                            <option>Which Sauce?</option>
-                            <option value="Mariana">Mariana</option>
-                            <option value="BBQ">BBQ</option>
+                            <option value="0">Which Sauce?</option>
+                            <option value="1.00">Mariana</option>
+                            <option value="1.10">BBQ</option>
                         </select>
                         <br>
                         <!--Select Cheese Type-->
                         <label for="cheeseType">
-                            <h4 class="pizza-form-heading">Any cheese?</h4>
+                            <h4 class="pizza-form-heading">Cheese: &nbsp;</h4>
                         </label>
-                        <select id="cheeseType" class="cheese" onChange="pizzaTotal()">
-                            <option>Add Cheese?</option>
-                            <option value="noCheese">No Cheese</option>
-                            <option value="standardCheese">Standard Cheese</option>
-                            <option value="extraCheese">Extra Cheese</option>
+                        <select name="cheeseType" id="cheeseType" onChange="pizzaTotal()">
+                            <option value="0">No Cheese</option>
+                            <option value="1.00">Standard Cheese</option>
+                            <option value="2.00">Extra Cheese</option>
                         </select>
+                        <br>
                         <!--Select Toppings-->
                         <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()">
                             <h4 class="pizza-form-heading">Which Toppings?</h4>
