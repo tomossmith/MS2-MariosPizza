@@ -82,6 +82,7 @@ width: 20em;
     padding: 4em;
 }
 
+
 .pizza-form-heading {
     font-family: 'Otomanopee One', sans-serif;
     color: #fff;
@@ -93,6 +94,11 @@ width: 20em;
     top: 0;
     left: 0;
   }
+
+  .pizza-group{
+    padding-top: 5em;
+  }
+
   .pizza-base {
     position: relative;
     top: 0;
