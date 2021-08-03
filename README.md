@@ -30,6 +30,28 @@ A site designed to provide customers an interactive way to pre-order their pizza
      * Returning Visitors, should be able to find social links to be able to engage within the online community.
      * Returning Visitors, should be able to find out more information about the history of the store/brand.
 
+----
+
+* ## Design
+
+* ### Structure & Mockup Designs
+
+    
+
+* ### Colour scheme   
+    
+
+* ### Typography 
+    When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
+    I wanted the font to be appropriate so that I could use it for the logo text and also the main site text. This would then help maintain a nice continuity within the design and also help create the italian brand I was aiming for.
+
+    The main font is Otomanopee One[Link](https://fonts.google.com/specimen/Otomanopee+One)
+    
+    The secondary font is 
+
+* ### What I changed from my mockup designs
+
+
 
 
 Problems:
