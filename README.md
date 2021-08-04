@@ -11,8 +11,6 @@ This is the README file for my Code Institute MS2 project site, Mario's Pizza
 
 A site designed to provide customers an interactive way to pre-order their pizza from their favourite Mario's Store
 
-## Viewing the site API's
-
 ----
 # User Experience (UX)
 
@@ -54,13 +52,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
 * ### What I changed from my mockup designs
 
 ----
-
-* ## Media
-
-     * ### Images
-
-    
-
+* ## Images
     * #### Logo
         I designed the logo for the site myself. I had an idea of the type of logo I was looking for when I first thought of the idea and so I thought it would be easier to create the logo myself to achieve the feel I was looking for.
         The chef image was taken from a vector file from Vecteezy, then I added the remaining elements myself.
@@ -96,6 +88,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
      It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
 
      <b>Custom Map Markers</b>
+     At present it may feel like the map looks very uniform to the usual Google Maps, by adding custom markers with the store logo on them it could help give the map a more custom feel.
 
      
 
@@ -112,9 +105,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
     *   HTML5
     *   CSS
     *   Javascript
-    *   JQuery - 
+    *   JQuery - Used to simplify and shorten some Javascript commands.
     *   Bootstrap - Used for layouts, styling and custom components such as navigation bar or modals.
-    *   Fontawesome - Used for generating the icons for the facilities section and also within the text areas.
+    *   Fontawesome - Used for generating the pizza icon's for the titles.
     *   Google fonts - Used to pull the required fonts into the website.
     *   Tiny PNG - Used to help reduce the filesize of the high quality images
     *   Adobe Photoshop & Illustrator
@@ -123,11 +116,13 @@ A site designed to provide customers an interactive way to pre-order their pizza
 * ### Integrated API's
      * Google Maps
           I decided the chose to integrate the Google Maps API to allow users to see where Mario's Pizza stores are located.
-          Store addresses have been entered as markers 
+          Store addresses have been entered as markers, and when clicked an information bar opens to show a photo of the store, opening times and a contact telephone number.
 
      * EmailJS
           This integrations allows the site to send the pizza order by email to the store using Javascript.
           The integration collects the specified elements from the pizza order form, arranges them into a custom template and sends the order through to the store's email address.
+
+          ############### INSERT PHOTO OF EMAIL SENT HERE ALONG WITH SCREENSHOT OF TEMPLATE #################
 
 ----
 
@@ -148,6 +143,38 @@ A site designed to provide customers an interactive way to pre-order their pizza
     A link will be generated for your live site.
     Initially all the content had not loaded correctly onto the site. After a force reload on my browser, the site displayed correctly.
 
+*    ### Running the code locally, using your API Keys.
+
+     In order to display the website with all its features, you will need to clone the repositry to your GitHub account or locally. You can then enter your own API keys to enable the features on the site.
+
+     Cloning will enable you to copy all of the site's files at that time, into your own working enviroment to apply any changes or test the site.
+
+     <b>How to clone the repositry</b>
+     1. On GitHub, navigate to the repositry location, or [Click Here](https://github.com/tomossmith/mariospizza)
+     2. On the right hand side of the page you will see a green button labelled 'Code'. Click This
+     3. A menu will appear with different ways of cloning the repositry.
+
+          <b>Clone the Repositry By HTTPS</b>
+          a. From the previous step, click on the clipboard button (located after the address) under the 'HTTPS' tab.
+          b. Open terminal and change directory to the area you wish to load the repositry into.
+          c. Once you're in the required directory, enter the command 'git clone' and paste the URL that you added to the clipboard in the previous step.
+          - Press Enter
+
+          <b>Clone the Repositry to GitHub Desktop</b>
+          a. Follow steps 1,2 and 3 above.
+          b. Click 'Open with GitHub Desktop
+          c. Follow the prompts within the GitHub Desktop popups to complete the clone.
+
+          <b>How to download a Zip file of the repositry</b>
+          a. Follow steps 1,2 and 3 above.
+          b. Select the option 'Download Zip'
+
+     Once you have cloned the repositry, you will need to obtain your own Google Maps API key.
+     To obtain your own key, you can follow the instructions on the Google Website [Click Here](https://developers.google.com/maps/documentation/maps-static/get-api-key)
+
+     Once you have the key you can enter it on the final line of script within the index.html page.
+
+     The script is formatted as follows: src="https://maps.googleapis.com/maps/api/js?key= ENTER YOUR KEY HERE.
 ----
 
 * ## Problems 
@@ -156,6 +183,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
 When trying to set a page background color, Bootstrap was overiding any parameters I entered.
 I found that applying a more specific parameter would allow the parameters that I set to be applied.
 
+<b>Javascript Runtime Error</b>
 Kept getting a runtime error on the javascript file, even when the file was empty. 
 I found that if all of Google Chrome's extensions were disabled, then the error would not appear.
 
