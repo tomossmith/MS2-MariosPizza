@@ -51,8 +51,40 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 * ### What I changed from my mockup designs
 
+----
 
+* ## Media
 
+     * ### Images
+
+    
+
+    * #### Logo
+        I designed the logo for the site myself. I had an idea of the type of logo I was looking for when I first thought of the idea and so I thought it would be easier to create the logo myself to achieve the feel I was looking for.
+        The chef image was taken from a vector file from Vecteezy, then I added the remaining elements myself.
+        By creating the logo myself, I was also able to generate a custom favicon for the site.
+        I used Adobe Illustrator to create the logo.
+
+    * #### 'Build A Pizza' Images
+        As I needed the ingredients for the pizza to be individual layers that would be visible, even when all the toppings are selected. The best way I could achieve this was to use a vector image of a pizza. (Sourced from Vecteezy)
+        I was then able to extract each topping element into individual layers and export as individual image files.
+        The ingredients were layed out with least amount of overlapping and exported with a transparent background.
+        I generated these images using Adobe Illustrator.
+
+----
+
+* ## Features
+
+* ### Noteable Features
+
+* ### Future Features
+     There are a few features I feel could be added to the site to develop it further.
+     I would like to introduce a payment gateway to the site so that customers could pay for the pizza in advance. This would be a great advantage for both the store and the customers, it would enable a quicker collection time and also prevent staff having to handle money (especially during Coronovirus restrictions).
+
+     A second feature that I feel would make the site more interactive for customers is an order tracking feature.
+     After placing an order, a customer could be given an order number that could be inputted on an order tracking section of the site. The customer could then see at what stage of the process their order is at and an additional option would be the possibility to edit their order assuming the store hasn't started processing their order.
+
+     A third feature that could be introduced is a feature that could generate repeat visits from customers by building a loyalty scheme. Customers could create an account and each time an order is placed, points could then be applied to their points balance and when reaching a certain balance, they could redeem them for money off vouchers or food items.
 
 Problems:
 
