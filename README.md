@@ -11,6 +11,8 @@ This is the README file for my Code Institute MS2 project site, Mario's Pizza
 
 A site designed to provide customers an interactive way to pre-order their pizza from their favourite Mario's Store
 
+## Viewing the site API's
+
 ----
 # User Experience (UX)
 
@@ -75,22 +77,114 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 * ## Features
 
+* ### Integrated API's
+     * Google Maps
+          I decided the chose to integrate the Google Maps API to allow users to see where Mario's Pizza stores are located.
+
+     * EmailJS
+
 * ### Noteable Features
 
 * ### Future Features
      There are a few features I feel could be added to the site to develop it further.
+     
+     <b>Payment Gateway</b>
      I would like to introduce a payment gateway to the site so that customers could pay for the pizza in advance. This would be a great advantage for both the store and the customers, it would enable a quicker collection time and also prevent staff having to handle money (especially during Coronovirus restrictions).
 
-     A second feature that I feel would make the site more interactive for customers is an order tracking feature.
+     <b>Order Tracking</b>
+     I feel that adding an order tracking feature could make the site more interactive for customers when using the site.
      After placing an order, a customer could be given an order number that could be inputted on an order tracking section of the site. The customer could then see at what stage of the process their order is at and an additional option would be the possibility to edit their order assuming the store hasn't started processing their order.
 
-     A third feature that could be introduced is a feature that could generate repeat visits from customers by building a loyalty scheme. Customers could create an account and each time an order is placed, points could then be applied to their points balance and when reaching a certain balance, they could redeem them for money off vouchers or food items.
+     <b>Loyalty Scheme</b>
+     This is a feature that could generate repeat visits from customers. Customers could create an account and each time an order is placed, points could then be applied to their points balance and when reaching a certain balance, they could redeem them for money off vouchers or food items. This could attract customers to come back to the store knowing that they may have money off vouchers against their next order.
 
-Problems:
+     <b>Store Finder</b>
+     It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
 
+     
+
+----
+
+* ### User Stories
+
+---
+
+* ## Key Components
+
+* ### Frameworks, Programmes and Libraries:
+
+    *   HTML5
+    *   CSS
+    *   Javascript
+    *   Bootstrap - Used for layouts, styling and custom components such as navigation bar or modals.
+    *   Fontawesome - Used for generating the icons for the facilities section and also within the text areas.
+    *   Calendly - Integrated into the classes page to display and manage bookings for all the fitness classes.
+    *   Google fonts - Used to pull the required fonts into the website.
+    *   Tiny PNG - Used to help reduce the filesize of the high quality images
+    *   Adobe Photoshop & Illustrator
+
+----
+
+* ## Deployment
+
+*   ### GitHub Pages
+
+    The site is hosted on GitHub pages. Deploying the site was very easy to do, especially as the repositry was already installed and managed on GitHub.
+
+    I deployed my site during a mentor session and had my mentor guide me through the process. 
+    To deploy the site I carried out the following steps:
+        - <b>Go To</b> your [GitHub](www.github.com) repository,
+        -    In the top right corner <b>Click Settings</b>
+        - <b>Scroll Down</b> to GitHub Pages
+        - <b>Select</b> Main/Master branch from the dropdown menu.
+        - <b>Click Save</b>
+
+    A link will be generated for your live site.
+    Initially all the content had not loaded correctly onto the site. After a force reload on my browser, the site displayed correctly.
+
+----
+
+* ## Problems 
+
+<b>Page Background</b>
 When trying to set a page background color, Bootstrap was overiding any parameters I entered.
 I found that applying a more specific parameter would allow the parameters that I set to be applied.
 
 Kept getting a runtime error on the javascript file, even when the file was empty. 
 I found that if all of Google Chrome's extensions were disabled, then the error would not appear.
 
+----
+
+* ## Testing
+
+*   ###  HTML
+
+*   ###  CSS
+
+*   ###  Javascript
+
+*   ###  Website compatibility
+
+*   ###  Link Testing
+
+*   ### Testing from User Stories and Experience
+
+*   ### First Time Visitor Goals
+
+* ### Returning Visitor Goals
+
+
+* ## Credits
+
+*   ###  Code
+
+*   ###  Images/Video
+
+ The images I used for the site were sourced from the following sites and photographers.
+
+    *   Unsplash
+
+    *   Vecteezy
+
+---
+---
