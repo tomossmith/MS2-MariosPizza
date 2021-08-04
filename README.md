@@ -77,12 +77,6 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 * ## Features
 
-* ### Integrated API's
-     * Google Maps
-          I decided the chose to integrate the Google Maps API to allow users to see where Mario's Pizza stores are located.
-
-     * EmailJS
-
 * ### Noteable Features
 
 * ### Future Features
@@ -101,6 +95,8 @@ A site designed to provide customers an interactive way to pre-order their pizza
      <b>Store Finder</b>
      It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
 
+     <b>Custom Map Markers</b>
+
      
 
 ----
@@ -116,12 +112,22 @@ A site designed to provide customers an interactive way to pre-order their pizza
     *   HTML5
     *   CSS
     *   Javascript
+    *   JQuery - 
     *   Bootstrap - Used for layouts, styling and custom components such as navigation bar or modals.
     *   Fontawesome - Used for generating the icons for the facilities section and also within the text areas.
-    *   Calendly - Integrated into the classes page to display and manage bookings for all the fitness classes.
     *   Google fonts - Used to pull the required fonts into the website.
     *   Tiny PNG - Used to help reduce the filesize of the high quality images
     *   Adobe Photoshop & Illustrator
+
+
+* ### Integrated API's
+     * Google Maps
+          I decided the chose to integrate the Google Maps API to allow users to see where Mario's Pizza stores are located.
+          Store addresses have been entered as markers 
+
+     * EmailJS
+          This integrations allows the site to send the pizza order by email to the store using Javascript.
+          The integration collects the specified elements from the pizza order form, arranges them into a custom template and sends the order through to the store's email address.
 
 ----
 
