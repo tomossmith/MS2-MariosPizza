@@ -45,17 +45,23 @@ A site designed to provide customers an interactive way to pre-order their pizza
      Once I had designed my main feature, I went about seeing what type of navigation would best suit the site. I decided to include a brand navigation bar where the business logo could be placed on the left top corner and as I had very little navigation links, it was easy to style the navigation bar without worrying about content being missed.
      All the links on the navigation bar take the customer to a section within the site and doesn't have the need to include any dropdowns, I think this was important so that the main content of the site was not hidden at any point.
 
+     Following on down the one page design, I felt it was important for the next section to include any additional key information that the customers need to know about the business. I chose to include a section for the customers to find out where all of the business's are located and any specific information for each store e.g. Opening Hours etc.
+     I chose to integrate a custom Google Map with markers to point out where each of the stores are located. The initial view of the map is in a zoomed out state so that all markers are visible to the customer, from there on they are able to click which store they would like to know more about, which opens an information box with the store address, opening hours and telephone number. I felt that displaying the information this way would keep the customer interacted with the site and also prevents overloading the customer with a lot of text to read through.
 
+     As the business for the site is a business that has been built through generations of a family and has been operational for quite some time, I wanted to include a short section about the history of the business. I tried to create a simple design that had the feel of an article/biography to share this information. 
+     The section contains an old photograph of the curator of the business, although biographies tend to have a large amount of text, again I felt that it was important to keep the family history quite short but detailed the key information of the history. This is because I felt that the target audience that would use such site is an audience that is likely to want to use the site for a short amount of time. They may be likely to want to land at the site, place the order and then leave. 
 
+     <b>Browser Wireframe Design</b>
 
-<center><b>Browser Wireframe Design</b></center>
-<center><img src="./assets/images/wireframes/browser-wireframe.png" alt="Mario's Pizza - Browser Wireframe Design" width="500" height="1000"></center>
+     <img src="./assets/images/wireframes/browser-wireframe.png" alt="Mario's Pizza - Browser Wireframe Design" width="500" height="1000">
 
-<center><b>Mobile Wireframe Design</b></center>
-<center><img src="./assets/images/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="600"></center>
+     <b>Mobile Wireframe Design</b>
+
+     <img src="./assets/images/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="600">
 
 * ### Colour scheme   
     
+    <img src="./assets/images/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
 
 * ### Typography 
     When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
