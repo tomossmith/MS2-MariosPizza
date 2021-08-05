@@ -1,7 +1,6 @@
 function sendMail(pizzaForm) {
     console.log("EmailJS Loaded")
 
-
         var checkPepperoni = "No";
         var checkChillies = "No";
         var checkHam = "No";
@@ -133,6 +132,10 @@ var total = subtotal.toFixed(Math.max(((subtotal+'').split(".")[1]||"").length, 
 console.log(subtotal);
 console.log(total);
 
+var baseSize = $( "#size option:selected" ).text();
+var crustType = $( "#crust option:selected" ).text();
+var sauceType = $( "#sauceType option:selected" ).text();
+
 // Send Email
 
     emailjs.send("service_be3wq2q", "mario", {
@@ -141,9 +144,9 @@ console.log(total);
         "phone": pizzaForm.phone.value,
         "collect_from": pizzaForm.store.value,
         "collect_time": pizzaForm.time.value,
-        "size": pizzaForm.size.label,
-        "base": pizzaForm.crust.label,
-        "sauce": pizzaForm.sauceType.label,
+        "size": baseSize,
+        "base": crustType,
+        "sauce": sauceType,
         "pepperoni": checkPepperoni,
         "chillies": checkChillies,
         "ham": checkHam,
@@ -156,7 +159,6 @@ console.log(total);
         "onions": checkOnions,
         "tomatoes": checkTomatoes,
         "price": total,
-
 
     })
     .then(

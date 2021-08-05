@@ -63,6 +63,10 @@ A site designed to provide customers an interactive way to pre-order their pizza
     
     <img src="./assets/images/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
 
+    To choose a compatible color scheme, I decided to use Adobe Color to find colors that would work well together.
+    I began by using a couple of the colors that I used to design the logo. I entered the color codes into the site and it came up with other colors that would work well in combination with the colors I had already entered.
+    I tend to use this feature by Adobe quite often, as I feel it helps me build a brand from some of my initial ideas.
+
 * ### Typography 
     When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
     I wanted the font to be appropriate so that I could use it for the logo text and also the main site text. This would then help maintain a nice continuity within the design and also help create the italian brand I was aiming for.
@@ -221,6 +225,9 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
 *   ###  CSS
 
 *   ###  Javascript
+
+When testing I found an error where the order email message being sent didn't include the options selected for the size, crust and sauce of the pizza.
+This was due to the sendEmail function trying to submit the 'value' being returned from the selected option instead of the text. To fix this, I created a variable for each selection to return the text of the user's selected option and then set the email function to call and submit this variable data.
 
 *   ###  Website compatibility
 
