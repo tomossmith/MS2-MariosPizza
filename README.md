@@ -36,7 +36,23 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 * ### Structure & Mockup Designs
 
-    
+     I started my designs by looking at other similar sites for some inspiration.
+     I felt that a key element of each site offering a similar service was that most of the sites were one page designs. Also, the key information that the customers needed were presented to them upon landing at the site. So when I designed the site, I wanted to make sure that the custom pizza order was a main feature of the first image of the site.
+
+     As I wasn't sure how well the pizza images and list would fit on a mobile design, I chose to design the site at full size to begin with. This meant I was able to try a number of different styles of laying out the form without having to worry about space.
+     Once I had established the key information I was going to use, I was then able to use the main design and simply drag and drop the form elements into a design I felt worked well on mobile.
+
+     Once I had designed my main feature, I went about seeing what type of navigation would best suit the site. I decided to include a brand navigation bar where the business logo could be placed on the left top corner and as I had very little navigation links, it was easy to style the navigation bar without worrying about content being missed.
+     All the links on the navigation bar take the customer to a section within the site and doesn't have the need to include any dropdowns, I think this was important so that the main content of the site was not hidden at any point.
+
+
+
+
+<center><b>Browser Wireframe Design</b></center>
+<center><img src="./assets/images/wireframes/browser-wireframe.png" alt="Mario's Pizza - Browser Wireframe Design" width="500" height="1000"></center>
+
+<center><b>Mobile Wireframe Design</b></center>
+<center><img src="./assets/images/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="600"></center>
 
 * ### Colour scheme   
     
@@ -109,6 +125,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
     *   Bootstrap - Used for layouts, styling and custom components such as navigation bar or modals.
     *   Fontawesome - Used for generating the pizza icon's for the titles.
     *   Google fonts - Used to pull the required fonts into the website.
+    *   Markdown - Used to write up the README file.
+    *   Git - User for Version Control
+    *   GitHub - To host the website repositry.
     *   Tiny PNG - Used to help reduce the filesize of the high quality images
     *   Adobe Photoshop & Illustrator
 
