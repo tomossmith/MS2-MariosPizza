@@ -165,6 +165,26 @@ var sauceType = $( "#sauceType option:selected" ).text();
         function(response) {
             console.log("SUCCESS", response);
             alert("Thank You For Your Order")
+            document.getElementById("size").value="0";
+            document.getElementById("crust").value="0";
+            document.getElementById("sauceType").value="0";
+            document.getElementById("cheeseType").value="000";
+            document.getElementById("Pepperoni").checked = false;
+            document.getElementById("Chillies").checked = false;
+            document.getElementById("Ham").checked = false;
+            document.getElementById("Mushrooms").checked = false;
+            document.getElementById("Peppers").checked = false;
+            document.getElementById("Pineapple").checked = false;
+            document.getElementById("Prawns").checked = false;
+            document.getElementById("Herbs").checked = false;
+            document.getElementById("Olives").checked = false;
+            document.getElementById("Onions").checked = false;
+            document.getElementById("Tomatoes").checked = false;
+            document.getElementById("fullname").value="";
+            document.getElementById("phone").value = "";
+            document.getElementById("emailaddress").value = "";
+            document.getElementById("store").value = "0";
+            document.getElementById("time").value = "00:00"; 
         },
         function(error) {
             console.log("FAILED", error);

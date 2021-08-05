@@ -75,9 +75,9 @@
                             alt="BBQ" /></div>
 
                     <!--CHEESE IMAGES-->
-                    <div id="showstandardCheese" class="pizza-group cheeseImages"><img
+                    <div id="showStandard-Cheese" class="pizza-group cheeseImages"><img
                             src="./assets/images/standard-cheese.png" alt="Standard Cheese" /></div>
-                    <div id="showextraCheese" class="pizza-group cheeseImages"><img
+                    <div id="showExtra-Cheese" class="pizza-group cheeseImages"><img
                             src="./assets/images/extra-cheese.png" alt="Extra Cheese" /></div>
 
                     <!--TOPPING IMAGES-->
@@ -118,7 +118,7 @@
                             <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
                         </label>
                         <select name="crust" id="crust" class="crust" onChange="pizzaTotal()" required>
-                            <option value="">Which Crust?</option>
+                            <option value="0">Which Crust?</option>
                             <option value="0.50">Thin Crust</option>
                             <option value="0.75">Deep Pan</option>
                             <option value="1.50">Stuffed Crust</option>
@@ -139,9 +139,10 @@
                             <h4 class="pizza-form-heading">Cheese: &nbsp;</h4>
                         </label>
                         <select name="cheeseType" id="cheeseType" onChange="pizzaTotal()">
+                            <option value="000">Any Cheese?</option>
                             <option value="0">No Cheese</option>
-                            <option value="1.00">Standard Cheese</option>
-                            <option value="2.00">Extra Cheese</option>
+                            <option value="1.00">Standard-Cheese</option>
+                            <option value="2.00">Extra-Cheese</option>
                         </select>
                         <br>
                         <!--Select Toppings-->
@@ -186,8 +187,8 @@
                         <label for="size">
                             <h4 class="pizza-form-heading">Collection Store: &nbsp;</h4>
                         </label>
-                        <select name="store" id="store" required>
-                            <option value="">Which Store?</option>
+                        <select id="store" name="store" required>
+                            <option value="0">Which Store?</option>
                             <option value="Little Italy, NYC">Little Italy, NYC</option>
                             <option value="Louisiana">Louisiana</option>
                             <option value="Las Vegas">Las Vegas</option>

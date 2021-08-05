@@ -29,9 +29,10 @@ $(document).ready(function () {
 // Sauce Dropdown Function   
 $(document).ready(function sauceDropdownFunction() {
     $('#sauceType').on('change', function () {
-        var ingredientVariable = $(this).val();
+        var ingredientVariable = $( "#sauceType option:selected" ).text();
         $("div.sauceImages").hide();
         $("#show" + ingredientVariable).show();
+        console.log(ingredientVariable);
     });
 });
 
@@ -41,7 +42,7 @@ $(document).ready(function sauceDropdownFunction() {
 
 $(document).ready(function cheeseDropdownFunction() {
     $('#cheeseType').on('change', function () {
-        var ingredientVariable = $(this).val();
+        var ingredientVariable = $( "#cheeseType option:selected" ).text();
         $("div.cheeseImages").hide();
         $("#show" + ingredientVariable).show();
     });
