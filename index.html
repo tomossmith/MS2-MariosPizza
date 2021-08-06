@@ -60,7 +60,8 @@
     <!--BUILD A PIZZA SECTION-->
     <section id="home">
         <div class="container img-fluid mx-auto" id="build-pizza-section">
-            <h1 class="section-heading text-white text-center build-pizza-title"><i class="pizza-icons fas fa-pizza-slice"></i> Build A
+            <h1 class="section-heading text-white text-center build-pizza-title"><i
+                    class="pizza-icons fas fa-pizza-slice"></i> Build A
                 Pizza!</h1>
             <div class="row">
                 <!--Pizza Images-->
@@ -105,21 +106,21 @@
                     <form name="pizzaForm" id="pizzaForm" onsubmit="return sendMail(this);">
                         <!--Select Pizza Size-->
                         <label for="size">
-                            <h4 class="pizza-form-heading">Size: &nbsp;</h4>
+                            <p class="pizza-form-heading">Size: &nbsp;</p>
                         </label>
                         <select name="size" class="size" id="size" onChange="pizzaTotal()" required>
-                            <option id="size-0" value="0">What Size?</option>
+                            <option id="What Size?" value="">What Size?</option>
                             <option id="6" value="4.00">6"</option>
                             <option id="9" value="6.00">9"</option>
                             <option id="12" value="8.00">12"</option>
                         </select>
                         <br>
                         <!--Select Base Type-->
-                        <label for="baseType">
-                            <h4 class="pizza-form-heading">Crust: &nbsp;</h4>
+                        <label>
+                            <p class="pizza-form-heading">Crust: &nbsp;</p>
                         </label>
                         <select name="crust" id="crust" class="crust" onChange="pizzaTotal()" required>
-                            <option value="0">Which Crust?</option>
+                            <option value="">Which Crust?</option>
                             <option value="0.50">Thin Crust</option>
                             <option value="0.75">Deep Pan</option>
                             <option value="1.50">Stuffed Crust</option>
@@ -127,30 +128,31 @@
                         <br>
                         <!--Select Sauce Type-->
                         <label for="sauceType">
-                            <h4 class="pizza-form-heading">Sauce: &nbsp;</h4>
+                            <p class="pizza-form-heading">Sauce: &nbsp;</p>
                         </label>
                         <select name="sauceType" id="sauceType" onChange="pizzaTotal()">
-                            <option value="0">Which Sauce?</option>
+                            <option value="">Which Sauce?</option>
                             <option value="1.00">Mariana</option>
                             <option value="1.10">BBQ</option>
                         </select>
                         <br>
                         <!--Select Cheese Type-->
                         <label for="cheeseType">
-                            <h4 class="pizza-form-heading">Cheese: &nbsp;</h4>
+                            <p class="pizza-form-heading">Cheese: &nbsp;</p>
                         </label>
                         <select name="cheeseType" id="cheeseType" onChange="pizzaTotal()">
                             <option value="000">Any Cheese?</option>
-                            <option value="0">No Cheese</option>
+                            <option value="">No Cheese</option>
                             <option value="1.00">Standard-Cheese</option>
                             <option value="2.00">Extra-Cheese</option>
                         </select>
                         <br>
                         <!--Select Toppings-->
-                        <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()">
-                            <h4 class="pizza-form-heading">Which Toppings?</h4>
+                        <label>
+                            <p class="pizza-form-heading">Which Toppings?</p>
                         </label>
-                        <div class="row text-white">
+
+                        <div class="row text-white" id="toppings" onChange="calculateToppingCost(); pizzaTotal()">
                             <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Pepperoni"
                                         name="pizza_topping" value="1" class="source" /> Pepperoni </label></div>
                             <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Chillies"
@@ -186,7 +188,7 @@
                         <br>
                         <!--Select Store-->
                         <label for="size">
-                            <h4 class="pizza-form-heading">Collection Store: &nbsp;</h4>
+                            <p class="pizza-form-heading">Collection Store: &nbsp;</p>
                         </label>
                         <select id="store" name="store" required>
                             <option value="0">Which Store?</option>
@@ -198,27 +200,24 @@
                         </select>
                         <br>
                         <label for="time">
-                            <h4 class="pizza-form-heading">Collection Time: &nbsp;</h4>
+                            <p class="pizza-form-heading">Collection Time: &nbsp;</p>
                         </label>
                         <input type="time" id="time" name="time" required>
 
                         <div class="row">
                             <div class="col-12">
-                                <td>
                                     <p class="pizza-form-heading">Pizza Price: £<span id="pizzaTotalCost"></span></p>
-                                </td>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <td>
-                                    <button id="pizza-submit-button" type="submit" class="btn btn-secondary">Order Pizza!</button>
-                                    <button id="pizza-reset-button" onClick="pizzaReset()" type="reset" class="btn btn-secondary">Reset</button>
-                                </td>
+                                    <button id="pizza-submit-button" type="submit" class="btn btn-secondary">Order
+                                        Pizza!</button>
+                                    <button id="pizza-reset-button" onClick="pizzaReset()" type="reset"
+                                        class="btn btn-secondary">Reset</button>
                             </div>
                         </div>
 
-                </div>
                 </form>
                 <div>
                     <!--PRICE SECTION-->
@@ -229,7 +228,6 @@
                     <p class="pizza-form-heading totals">Topping Price: £ <span id="toppingSubtotal"></span></p>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <br>
@@ -256,13 +254,13 @@
     <hr class="section-line">
     <section id="about">
         <div class="container">
-            <h2 class="text-white text-center section-heading"><i class="pizza-icons fas fa-pizza-slice"></i> About
-                Mario's</h2>
-            <div class="about-section text-white">
-                <figure class="img-left">
-                    <img id="about-img" src="./assets/images/mario.png" alt="Old photo of Mario">
-                </figure>
+                        <div class="about-section text-white">
                 <section>
+                    <h2 class="text-white text-center section-heading"><i class="pizza-icons fas fa-pizza-slice"></i> About
+                        Mario's</h2>
+                        <figure class="img-left">
+                            <img id="about-img" src="./assets/images/mario.png" alt="Old photo of Mario">
+                        </figure>
                     <p>Our pizza business has been built over generations of our family history. Starting back in 1889
                         by our great ancestor Rafael who began making pizzas for his local villagers as a way of using
                         up various ingredients that would otherwise go to waste.
@@ -297,25 +295,30 @@
             </address>
             <div id="social-icons" class="col-12 text-center">
 
-                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com"><img src="./assets/images/social-facebook.png" alt="Facebook"></a>
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com"><img
+                        src="./assets/images/social-facebook.png" alt="Facebook"></a>
 
-                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.twitter.com"><img src="./assets/images/social-twitter.png" alt="Twitter"></a>
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.twitter.com"><img
+                        src="./assets/images/social-twitter.png" alt="Twitter"></a>
 
-                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com"><img src="./assets/images/social-instagram.png" alt="Instagram"></a>
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com"><img
+                        src="./assets/images/social-instagram.png" alt="Instagram"></a>
 
-                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.whatsapp.com"><img src="./assets/images/social-whatsapp.png" alt="Whatsapp"></a>
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.whatsapp.com"><img
+                        src="./assets/images/social-whatsapp.png" alt="Whatsapp"></a>
 
-                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com"><img src="./assets/images/social-youtube.png" alt="Youtube"></a>
-                
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com"><img
+                        src="./assets/images/social-youtube.png" alt="Youtube"></a>
+
             </div>
         </div>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">  </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         (function () {
             emailjs.init("user_Aqu5cOW3Yc4jCcdD7YZbC");
         })();

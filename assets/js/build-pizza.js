@@ -32,7 +32,6 @@ $(document).ready(function sauceDropdownFunction() {
         var ingredientVariable = $("#sauceType option:selected").text();
         $("div.sauceImages").hide();
         $("#show" + ingredientVariable).show();
-        console.log(ingredientVariable);
     });
 });
 
