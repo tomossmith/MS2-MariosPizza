@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
@@ -9,11 +10,11 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Otomanopee One', 'Roboto';
 }
 
 p {
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Otomanopee One', 'Roboto';
 }
 
 .uppercase {
@@ -51,7 +52,7 @@ a.navbar-brand {
 .navbar-nav .nav-item .nav-link {
   color: #fff;
   margin-right: 2em;
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Otomanopee One', 'Roboto';
 }
 
 .navbar a :hover {
@@ -81,7 +82,7 @@ a.navbar-brand {
 }
 
 .pizza-form-heading {
-  font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Otomanopee One', 'Roboto';
   color: #fff;
   font-size: 1em;
 }
