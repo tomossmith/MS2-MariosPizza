@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Order your Mario's pizza online using our custom pizza builder. Order online in minutes and collect from any of our stores!">
+    <meta name="description"
+        content="Order your Mario's pizza online using our custom pizza builder. Order online in minutes and collect from any of our stores!">
     <title>Mario's Pizza</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -58,8 +59,8 @@
 
     <!--BUILD A PIZZA SECTION-->
     <section id="home">
-        <div class="container img-fluid" id="build-pizza-section">
-            <h1 class="section-heading text-white text-center"><i class="pizza-icons fas fa-pizza-slice"></i> Build A
+        <div class="container img-fluid mx-auto" id="build-pizza-section">
+            <h1 class="section-heading text-white text-center build-pizza-title"><i class="pizza-icons fas fa-pizza-slice"></i> Build A
                 Pizza!</h1>
             <div class="row">
                 <!--Pizza Images-->
@@ -70,15 +71,15 @@
 
                     <!--SAUCE IMAGES-->
                     <div id="showMariana" class="pizza-group sauceImages"><img src="./assets/images/m-sauce.png"
-                            alt="Mariana" /></div>
-                    <div id="showBBQ" class="pizza-group sauceImages"><img src="./assets/images/b-sauce.png"
-                            alt="BBQ" /></div>
+                            alt="Mariana"></div>
+                    <div id="showBBQ" class="pizza-group sauceImages"><img src="./assets/images/b-sauce.png" alt="BBQ">
+                    </div>
 
                     <!--CHEESE IMAGES-->
                     <div id="showStandard-Cheese" class="pizza-group cheeseImages"><img
-                            src="./assets/images/standard-cheese.png" alt="Standard Cheese" /></div>
+                            src="./assets/images/standard-cheese.png" alt="Standard Cheese"></div>
                     <div id="showExtra-Cheese" class="pizza-group cheeseImages"><img
-                            src="./assets/images/extra-cheese.png" alt="Extra Cheese" /></div>
+                            src="./assets/images/extra-cheese.png" alt="Extra Cheese"></div>
 
                     <!--TOPPING IMAGES-->
                     <img id="img_1" class="pizza-group toppingImages" src="./assets/images/pepperoni.png"
@@ -98,14 +99,14 @@
                     <img id="img_11" class="pizza-group toppingImages" src="./assets/images/tomatoes.png"
                         alt="Tomatoes">
                 </div>
+
                 <!--Ingredients Form-->
-                <div class="col-xl-5 col-lg-12" id="pizza-form-section">
+                <div class="col-xl-5 col-lg-12 mx-auto" id="pizza-form-section">
                     <form name="pizzaForm" id="pizzaForm" onsubmit="return sendMail(this);">
                         <!--Select Pizza Size-->
                         <label for="size">
                             <h4 class="pizza-form-heading">Size: &nbsp;</h4>
                         </label>
-
                         <select name="size" class="size" id="size" onChange="pizzaTotal()" required>
                             <option id="size-0" value="0">What Size?</option>
                             <option id="6" value="4.00">6"</option>
@@ -148,32 +149,32 @@
                         <!--Select Toppings-->
                         <label id="toppings" name='toppings' onChange="calculateToppingCost(); pizzaTotal()">
                             <h4 class="pizza-form-heading">Which Toppings?</h4>
-                            <div class="row text-white">
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Pepperoni"
-                                            name="pizza_topping" value="1" class="source" /> Pepperoni </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Chillies"
-                                            name="pizza_topping" value="2" class="source" /> Chillies </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Ham"
-                                            name="pizza_topping" value="3" class="source" /> Ham </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Mushrooms"
-                                            name="pizza_topping" value="4" class="source" /> Mushrooms </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Peppers"
-                                            name="pizza_topping" value="5" class="source" /> Peppers </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Pineapple"
-                                            name="pizza_topping" value="6" class="source" /> Pineapple </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Prawns"
-                                            name="pizza_topping" value="7" class="source" /> Prawns</label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Herbs"
-                                            name="pizza_topping" value="8" class="source" /> Italian Herbs </label>
-                                </div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Olives"
-                                            name="pizza_topping" value="9" class="source" /> Olives </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Onions"
-                                            name="pizza_topping" value="10" class="source" /> Onions </label></div>
-                                <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Tomatoes"
-                                            name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
-                            </div>
                         </label>
+                        <div class="row text-white">
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Pepperoni"
+                                        name="pizza_topping" value="1" class="source" /> Pepperoni </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Chillies"
+                                        name="pizza_topping" value="2" class="source" /> Chillies </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Ham"
+                                        name="pizza_topping" value="3" class="source" /> Ham </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Mushrooms"
+                                        name="pizza_topping" value="4" class="source" /> Mushrooms </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Peppers"
+                                        name="pizza_topping" value="5" class="source" /> Peppers </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Pineapple"
+                                        name="pizza_topping" value="6" class="source" /> Pineapple </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Prawns"
+                                        name="pizza_topping" value="7" class="source" /> Prawns</label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Herbs"
+                                        name="pizza_topping" value="8" class="source" /> Italian Herbs </label>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Olives"
+                                        name="pizza_topping" value="9" class="source" /> Olives </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Onions"
+                                        name="pizza_topping" value="10" class="source" /> Onions </label></div>
+                            <div class="col-lg-4 col-sm-4 col-xs-6"><label><input type="checkbox" id="Tomatoes"
+                                        name="pizza_topping" value="11" class="source" /> Tomatoes </label></div>
+                        </div>
                         <br>
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                         <br>
@@ -219,15 +220,10 @@
                 </form>
                 <div>
                     <!--PRICE SECTION-->
-
                     <p class="pizza-form-heading totals">Size Price: £ <span id="sizeSubtotal"></span></p>
-
                     <p class="pizza-form-heading totals">Crust Price: £ <span id="crustSubtotal"></span></p>
-
                     <p class="pizza-form-heading totals">Sauce Price: £ <span id="sauceSubtotal"></span></p>
-
                     <p class="pizza-form-heading totals">Cheese Price: £ <span id="cheeseSubtotal"></span></p>
-
                     <p class="pizza-form-heading totals">Topping Price: £ <span id="toppingSubtotal"></span></p>
                 </div>
             </div>
@@ -281,8 +277,7 @@
             </div>
         </div>
     </section>
-    <br>
-    <br>
+
 
     <footer id="contact">
         <hr class="section-line">
@@ -298,21 +293,22 @@
                     <i class="fas fa-phone contact-icons"></i> +021 2431 4505<br>
                     <i class="fas fa-at contact-icons"></i><a href="mailto:pizza@marios.com"> pizza@marios.com</a></p>
             </address>
-            <div class="col-12 text-center">
-                <a class="social-icons fa fa-facebook" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"></a>>
-                    <img src="./assets/images/social-facebook.png" alt="Facebook Icon" height="30" width="30">
+            <div id="social-icons" class="col-12 text-center">
+                <a class="social-icons fa fa-facebook" href="https://www.facebook.com" target="_blank"
+                    rel="noreferrer noopener"></a>
+                <img src="./assets/images/social-facebook.png" alt="Facebook Icon">
                 </a>
-                <a class="social-icons" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"></a>>
-                    <img src="./assets/images/social-twitter.png" alt="Twitter Icon" height="30" width="30">
+                <a class="social-icons" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"></a>
+                <img src="./assets/images/social-twitter.png" alt="Twitter Icon">
                 </a>
-                <a class="social-icons" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"></a>>
-                    <img src="./assets/images/social-instagram.png" alt="Instagram Icon" height="30" width="30">
+                <a class="social-icons" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"></a>
+                <img src="./assets/images/social-instagram.png" alt="Instagram Icon">
                 </a>
-                <a class="social-icons" href="https://www.whatsapp.com" target="_blank" rel="noreferrer noopener"></a>>
-                    <img src="./assets/images/social-whatsapp.png" alt="Whatsapp Icon" height="30" width="30">
+                <a class="social-icons" href="https://www.whatsapp.com" target="_blank" rel="noreferrer noopener"></a>
+                <img src="./assets/images/social-whatsapp.png" alt="Whatsapp Icon">
                 </a>
-                <a class="social-icons" href="https://www.youtube.com" target="_blank" rel="noreferrer noopener"></a>>
-                    <img src="./assets/images/social-youtube.png" alt="Youtube Icon" height="30" width="30">
+                <a class="social-icons" href="https://www.youtube.com" target="_blank" rel="noreferrer noopener"></a>
+                <img src="./assets/images/social-youtube.png" alt="Youtube Icon">
                 </a>
             </div>
         </div>

@@ -151,6 +151,8 @@ A site designed to provide customers an interactive way to pre-order their pizza
           This integrations allows the site to send the pizza order by email to the store using Javascript.
           The integration collects the specified elements from the pizza order form, arranges them into a custom template and sends the order through to the store's email address.
 
+          This integration also allows several other features that could be useful for future features. However, these features are restricted to a premium restriction of the service. I had hoped to be able to customise the email form to include the logo and carry the brand of the business. However this is a feature that can only be used with the premium version.
+
           ############### INSERT PHOTO OF EMAIL SENT HERE ALONG WITH SCREENSHOT OF TEMPLATE #################
 
 ----
