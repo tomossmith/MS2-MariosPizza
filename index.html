@@ -203,17 +203,19 @@
                         <input type="time" id="time" name="time" required>
 
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <td>
                                     <p class="pizza-form-heading">Pizza Price: £<span id="pizzaTotalCost"></span></p>
                                 </td>
                             </div>
-                            <div class="col-6">
-
-                                <td><button type="submit" class="btn btn-secondary center-block">Order Pizza!</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <td>
+                                    <button id="pizza-submit-button" type="submit" class="btn btn-secondary">Order Pizza!</button>
+                                    <button id="pizza-reset-button" onClick="pizzaReset()" type="reset" class="btn btn-secondary">Reset</button>
                                 </td>
                             </div>
-
                         </div>
 
                 </div>
@@ -294,29 +296,24 @@
                     <i class="fas fa-at contact-icons"></i><a href="mailto:pizza@marios.com"> pizza@marios.com</a></p>
             </address>
             <div id="social-icons" class="col-12 text-center">
-                <a class="social-icons fa fa-facebook" href="https://www.facebook.com" target="_blank"
-                    rel="noreferrer noopener"></a>
-                <img src="./assets/images/social-facebook.png" alt="Facebook Icon">
-                </a>
-                <a class="social-icons" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"></a>
-                <img src="./assets/images/social-twitter.png" alt="Twitter Icon">
-                </a>
-                <a class="social-icons" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"></a>
-                <img src="./assets/images/social-instagram.png" alt="Instagram Icon">
-                </a>
-                <a class="social-icons" href="https://www.whatsapp.com" target="_blank" rel="noreferrer noopener"></a>
-                <img src="./assets/images/social-whatsapp.png" alt="Whatsapp Icon">
-                </a>
-                <a class="social-icons" href="https://www.youtube.com" target="_blank" rel="noreferrer noopener"></a>
-                <img src="./assets/images/social-youtube.png" alt="Youtube Icon">
-                </a>
+
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com"><img src="./assets/images/social-facebook.png" alt="Facebook"></a>
+
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.twitter.com"><img src="./assets/images/social-twitter.png" alt="Twitter"></a>
+
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com"><img src="./assets/images/social-instagram.png" alt="Instagram"></a>
+
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.whatsapp.com"><img src="./assets/images/social-whatsapp.png" alt="Whatsapp"></a>
+
+                <a class="social-icons" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com"><img src="./assets/images/social-youtube.png" alt="Youtube"></a>
+                
             </div>
         </div>
     </footer>
 
 
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">  </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {

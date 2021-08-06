@@ -29,7 +29,7 @@ $(document).ready(function () {
 // Sauce Dropdown Function   
 $(document).ready(function sauceDropdownFunction() {
     $('#sauceType').on('change', function () {
-        var ingredientVariable = $( "#sauceType option:selected" ).text();
+        var ingredientVariable = $("#sauceType option:selected").text();
         $("div.sauceImages").hide();
         $("#show" + ingredientVariable).show();
         console.log(ingredientVariable);
@@ -42,7 +42,7 @@ $(document).ready(function sauceDropdownFunction() {
 
 $(document).ready(function cheeseDropdownFunction() {
     $('#cheeseType').on('change', function () {
-        var ingredientVariable = $( "#cheeseType option:selected" ).text();
+        var ingredientVariable = $("#cheeseType option:selected").text();
         $("div.cheeseImages").hide();
         $("#show" + ingredientVariable).show();
     });
@@ -149,4 +149,52 @@ function pizzaTotal() {
 
     var total = sizeCost + crustCost + sauceCost + cheeseCost + toppingCost;
     document.getElementById("pizzaTotalCost").innerHTML = total.toFixed(2);
+}
+
+
+//Pizza Reset
+function pizzaReset() {
+    var img_1 = document.getElementById("img_1")
+    var img_2 = document.getElementById("img_2")
+    var img_3 = document.getElementById("img_3")
+    var img_4 = document.getElementById("img_4")
+    var img_5 = document.getElementById("img_5")
+    var img_6 = document.getElementById("img_6")
+    var img_7 = document.getElementById("img_7")
+    var img_8 = document.getElementById("img_8")
+    var img_9 = document.getElementById("img_9")
+    var img_10 = document.getElementById("img_10")
+    var img_11 = document.getElementById("img_11")
+    $(img_1).hide();
+    $(img_2).hide();
+    $(img_3).hide();
+    $(img_4).hide();
+    $(img_5).hide();
+    $(img_6).hide();
+    $(img_7).hide();
+    $(img_8).hide();
+    $(img_9).hide();
+    $(img_10).hide();
+    $(img_11).hide();
+
+    document.getElementById("size").value = "0";
+    document.getElementById("crust").value = "0";
+    document.getElementById("sauceType").value = "0";
+    document.getElementById("cheeseType").value = "000";
+    document.getElementById("Pepperoni").checked = false;
+    document.getElementById("Chillies").checked = false;
+    document.getElementById("Ham").checked = false;
+    document.getElementById("Mushrooms").checked = false;
+    document.getElementById("Peppers").checked = false;
+    document.getElementById("Pineapple").checked = false;
+    document.getElementById("Prawns").checked = false;
+    document.getElementById("Herbs").checked = false;
+    document.getElementById("Olives").checked = false;
+    document.getElementById("Onions").checked = false;
+    document.getElementById("Tomatoes").checked = false;
+    document.getElementById("fullname").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("emailaddress").value = "";
+    document.getElementById("store").value = "0";
+    document.getElementById("time").value = "00:00";
 }

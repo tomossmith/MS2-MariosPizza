@@ -127,6 +127,16 @@ a.navbar-brand {
   border-radius: 2em;
 }
 
+#pizza-submit-button {
+  background-color: #02a892;
+  padding: 1em;
+}
+
+#pizza-reset-button {
+  background-color: #ff1100;
+  padding: 1em;
+}
+
 .totals {
   display: none;
 }
@@ -180,7 +190,6 @@ footer a {
   
 }
 
-/* */
 @media only screen and (min-width: 300px) {
   #logo img {
     width: 10em;
