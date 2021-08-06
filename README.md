@@ -7,7 +7,7 @@ This is the README file for my Code Institute MS2 project site, Mario's Pizza
 [View the live site here](https://tomossmith.github.io/mariospizza/index.html)
 ----
 
-<center><img src="./assets/images/#######" alt="Mario's Pizza - Website Display"></center>
+<center><img src="./assets/images/readme/responsive-design.png" alt="Mario's Pizza - Website Display"></center>
 
 A site designed to provide customers an interactive way to pre-order their pizza from their favourite Mario's Store
 
@@ -53,15 +53,15 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
      <b>Browser Wireframe Design</b>
 
-     <img src="./assets/images/wireframes/browser-wireframe.png" alt="Mario's Pizza - Browser Wireframe Design" width="500" height="1000">
+     <img src="./assets/images/readme/wireframes/browser-wireframe.png" alt="Mario's Pizza - Browser Wireframe Design" width="500" height="1000">
 
      <b>Mobile Wireframe Design</b>
 
-     <img src="./assets/images/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="600">
+     <img src="./assets/images/readme/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="600">
 
 * ### Colour scheme   
     
-    <img src="./assets/images/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
+    <img src="./assets/images/readme/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
 
     To choose a compatible color scheme, I decided to use Adobe Color to find colors that would work well together.
     I began by using a couple of the colors that I used to design the logo. I entered the color codes into the site and it came up with other colors that would work well in combination with the colors I had already entered.
@@ -236,7 +236,7 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
 
           Once these errors were resolved, the validator returned with no errors.
 
-          <img src="./assets/images/html-validation-report.png" alt="HTML Validation Report"/>
+          <img src="./assets/images/readme/html-validation-report.png" alt="HTML Validation Report"/>
 
      *   ###  <b>CSS</b>
 
@@ -285,11 +285,22 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
           Although my overall performance rating is still in the amber category, I belive this is because the images that I am loading at startup of the site are causing an additional delay. At the moment, I am not too sure how I could address that issue, but it would be something worth looking into to further develop this site in the future.
 
           Here were my final scores:
-          
-          <img src="./assets/images/lighthouse-report.png" alt="HTML Validation Report"/>
+
+          <img src="./assets/images/readme/lighthouse-report.png" alt="HTML Validation Report"/>
 
 
-*   ###  Website compatibility
+     *   ###  <b>Responsive Design</b>
+
+          I decided to design my site using Bootstrap in order to constrain the content of the site easily and smoothly.
+          I was able to ensure that the content on the site scaled or repositioned itself differently depending on the screen dimensions of the device viewing the page.
+          However, I did have some difficulty in getting the pizza images to respond well to Bootstrap. Although I set manual column width for different screen dimensions, it would undo the alignment of the layered images of the ingredients. Despite several attempts and different methods, I found that the only way to make sure that the images would be responsive is by creating a selection of standard media query dimensions.
+
+          <img src="./assets/images/readme/responsive-design.png" alt="HTML Validation Report"/>
+
+
+
+*   ###  Browser compatibility
+
 
 *   ###  Link Testing
 
