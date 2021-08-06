@@ -220,16 +220,74 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
 
 ----
 
-* ## Testing
+* ## <b>Testing</b>
 
-*   ###  HTML
+     *   ###  <b>HTML</b>
 
-*   ###  CSS
+          To test my HTML coding, I used the [W3 Validator](https://validator.w3.org/) 
 
-*   ###  Javascript
+          The validator found a number of errors, of which were repeating errors for the same reasons.
+          I had placed '<h4>' tags within the label tags for the main pizza form. I think these were placed in error while building the form and carried through by copy and pasting for each element when building the form.
+          To prevent this error, I removed the heading tags and re-committed the document.
+          As I had already applied a class to the element, the heading tag was redundant and could be removed without changing the way the elements looked.
 
-When testing I found an error where the order email message being sent didn't include the options selected for the size, crust and sauce of the pizza.
-This was due to the sendEmail function trying to submit the 'value' being returned from the selected option instead of the text. To fix this, I created a variable for each selection to return the text of the user's selected option and then set the email function to call and submit this variable data.
+          A second error the validator found was for a stray div tag, and an unclosed div tag within a section.
+          These seem to have got mis-placed when moving the code around and to resolve the error, I simply moved the closing div tag within the section tags that it belonged to and re-commited the document.
+
+          Once these errors were resolved, the validator returned with no errors.
+
+          <img src="./assets/images/html-validation-report.png" alt="HTML Validation Report"/>
+
+     *   ###  <b>CSS</b>
+
+          To test my CSS coding, I used the [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator) 
+
+          I first entered the URL of my site into the validator, however it returned a large amount of errors that were from the linked Bootstrap CSS documents.
+
+          I therefore chose to use the direct input method in order to display the errors that related only to my css document.
+
+          Upon running this validation it returned 1 error and 1 warning.
+
+          Error: Value Error : float center is not a float value : center
+
+          In order to prevent this error, I removed the 'float' attribute from the document and chose to apply a 'width: 100%' to the image. I needed to have the image placed centrally or at full width in order to prevent the text that was wrapping around the image to be displayed poorly.
+
+          Warning: Same color for background-color and color
+
+          This warning had been flagged because I placed a background-color and color attribute to the .section-line class. As it was a horizontal line I was trying to color, I removed the color attribute and this cleared the warning.
+
+          <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!"/>
+          <img style="border:0;width:88px;height:31px"
+               src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+               alt="Valid CSS!" />
+
+     *   ###  <b>Javascript</b>
+
+          When running my own Javascript testing I found an error where the order email message being sent didn't include the options selected for the size, crust and sauce of the pizza.
+          This was due to the sendEmail function trying to submit the 'value' being returned from the selected option instead of the text. To fix this, I created a variable for each selection to return the text of the user's selected option and then set the email function to call and submit this variable data.
+
+          I also decided to run my function through  [JSHint](https://jshint.com/) in order to try to pickup any errors I may have missed.
+          
+          I didn't find the website very useful in comparison to the HTML and CSS validator tools, however I was able to pick up a few errors that I had missed.
+
+     *   ###  <b>Overall Website Performance and Compatibility</b>
+
+          In order to make sure that my website was efficient and was able to meet standard website exepectations, I used an open-source developer tool made by Google called  [Lighthouse](https://developers.google.com/web/tools/lighthouse).
+          
+          To use lighthouse, you need to have an account with Google and also use the Chrome web browser. It asks you to install its plug-in, and once installed you are able to click on the plug-in icon and ask Lighthouse to run its tests on that site.
+
+          I found this tool very useful as it offers lots of useful tips on how your site can be improved.
+          My ratings were quite average to begin with, and the least scoring rating was for my website performance.
+          I found that due to the several scripts I had placed in the head of my document, it was causing the website to take longer than it should to load. The tool advised me to place these in the end of my body tags in order to load them once the website content had been loaded. By doing so, this increased my score by nearly 20 points and a useful tool to use in the future.
+
+          Although my overall performance rating is still in the amber category, I belive this is because the images that I am loading at startup of the site are causing an additional delay. At the moment, I am not too sure how I could address that issue, but it would be something worth looking into to further develop this site in the future.
+
+          Here were my final scores:
+          
+          <img src="./assets/images/lighthouse-report.png" alt="HTML Validation Report"/>
+
 
 *   ###  Website compatibility
 

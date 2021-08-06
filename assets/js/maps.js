@@ -1,11 +1,10 @@
 //Credit: https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
 
-var markers = [
-    {
-        "title": `Mario's Pizza - Little Italy, NYC`,
-        "lat": '40.71902502339173', 
-        "lng": '-73.99728568465896',
-        "description": `<h4>Mario's Little Italy</h4>
+var markers = [{
+    "title": `Mario's Pizza - Little Italy, NYC`,
+    "lat": '40.71902502339173',
+    "lng": '-73.99728568465896',
+    "description": `<h4>Mario's Little Italy</h4>
         <br>
         <br> <img src="./assets/images/little-italy.jpg" alt="Little Italy Store" style="width:20em;">
         <br> <strong>Address:</strong> 34th St, New York, NY 10016, United States
@@ -13,11 +12,11 @@ var markers = [
         <br> <strong>Telephone:</strong> +021 2431 4505
         <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
         <br>`
-  
-    },
+
+  },
   {
     "title": `Mario's Pizza - Louisiana`,
-    "lat": '30.94593894883351', 
+    "lat": '30.94593894883351',
     "lng": '-91.24659293776425',
     "description": `<h4>Mario's Louisiana</h4>
     <br>
@@ -26,10 +25,10 @@ var markers = [
     <br> <strong>Telephone:</strong> +150 4866 1200
     <br> <strong>Opening Hours:</strong> 11am - 1am / 7 Days a week.
     <br>`
-},
+  },
   {
     "title": `Mario's Pizza - Fremont St, Las Vegas`,
-    "lat": '36.16149155438114', 
+    "lat": '36.16149155438114',
     "lng": '-115.12233330745995',
     "description": `<h4>Mario's Las Vegas</h4>
     <br>
@@ -63,39 +62,38 @@ var markers = [
     <br> <strong>Opening Hours:</strong> 11am - 3am / 7 Days a week.
     <br>`
   }
-  ];
-  window.onload = function () {
-      LoadMap();
+];
+window.onload = function () {
+  LoadMap();
+}
+
+function LoadMap() {
+  var mapOptions = {
+    center: new google.maps.LatLng(39.75500275292877, -101.28326905998865),
+    zoom: 4.5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("Map"), mapOptions);
+
+  //Create and open InfoWindow.
+  var infoWindow = new google.maps.InfoWindow();
+
+  for (var i = 0; i < markers.length; i++) {
+    var data = markers[i];
+    var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: data.title
+    });
+
+    //Attach click event to the marker.
+    (function (marker, data) {
+      google.maps.event.addListener(marker, "click", function (e) {
+        //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+        infoWindow.setContent("<div style = 'width:300px;min-height:100px'>" + data.description + "</div>");
+        infoWindow.open(map, marker);
+      });
+    })(marker, data);
   }
-  function LoadMap() {
-      var mapOptions = {
-          center: new google.maps.LatLng(39.75500275292877 , -101.28326905998865),
-          zoom: 4.5,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("Map"), mapOptions);
-
-      //Create and open InfoWindow.
-      var infoWindow = new google.maps.InfoWindow();
-
-      for (var i = 0; i < markers.length; i++) {
-          var data = markers[i];
-          var myLatlng = new google.maps.LatLng(data.lat, data.lng);
-          var marker = new google.maps.Marker({
-              position: myLatlng,
-              map: map,
-              title: data.title
-          });
-
-          //Attach click event to the marker.
-          (function (marker, data) {
-              google.maps.event.addListener(marker, "click", function (e) {
-                  //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-                  infoWindow.setContent("<div style = 'width:300px;min-height:100px'>" + data.description + "</div>");
-                  infoWindow.open(map, marker);
-              });
-          })(marker, data);
-      }
-  }
-
-  
+}

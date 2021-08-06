@@ -49,7 +49,7 @@ $(document).ready(function cheeseDropdownFunction() {
 
 // Toppings Function  
 $('input[name="pizza_topping"]').change(function toppings() {
-    ingredientid = "#img_" + $(this).val();
+    var ingredientid = "#img_" + $(this).val();
     //show image if the checkbox is checked
     if ($(this).prop('checked')) {
         $(ingredientid).show();

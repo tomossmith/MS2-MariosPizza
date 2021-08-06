@@ -74,14 +74,11 @@ a.navbar-brand {
   color: #FED8AD;
 }
 
-
-
 /* Pizza Form */
 
 #build-pizza-section {
   padding: 2em;
 }
-
 
 .pizza-form-heading {
   font-family: 'Otomanopee One', sans-serif;
@@ -162,14 +159,12 @@ a.navbar-brand {
   margin: 0 15px 0;
 }
 
-
 /*FOOTER */
 .section-line {
   height: 2px;
   padding: 0;
   margin: 5px 0px;
   border-width: 0;
-  color: #FED8AD;
   background-color: #FED8AD;
 }
 
@@ -191,7 +186,8 @@ footer a {
 }
 
 @media only screen and (min-width: 300px) {
-  #logo img {
+
+    #logo img {
     width: 10em;
   }
 
@@ -215,23 +211,23 @@ footer a {
   footer h3.section-heading {
     padding-top: 0.5em;
     font-size: 0.8em;
+  }
+
+  footer p {
+  margin: 0;
+  font-size: 0.4em;
+  padding: 0;
+  }
+
+  #social-icons img {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 0.5em;
+  }
 }
 
-footer p {
- margin: 0;
- font-size: 0.4em;
- padding: 0;
-}
-
-#social-icons img {
-  width: 2em;
-  height: 2em;
-  margin-bottom: 0.5em;
-}
-
-}
-/* Extra small devices (phones, 400px and up) */
 @media only screen and (min-width: 400px) {
+
   #logo img {
     width: 10em;
   }
@@ -254,61 +250,60 @@ footer p {
   }
 
   .img-left {
-    width: 400px;
-    float: center;
+    width: 100%;
     margin: 0;
   }
 
   footer h3.section-heading {
     padding-top: 0.5em;
     font-size: 1.5em;
-}
-
-footer p {
- margin: 0;
- font-size: 0.8em;
- padding: 0;
-}
-
-#social-icons img {
-  width: 4em;
-  height: 4em;
-  margin-bottom: 0.5em;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    #logo img {
-      width: 16em;
-    }
-  
-    .section-heading {
-      font-size: 2em;
-      padding: 0;
-    }
-  
-    .pizza-base, .pizza-group {
-      width: 18em;
-      padding: 2em 0em;
-      margin-left: 5em;
-    }
-
-    .sauceImages img, .cheeseImages img {
-      width: 18em;
-      padding: 0;
-      margin-left: 0em;
-    }
-
-    .img-left {
-      width: 300px;
-      float: left;
-      margin: 0 15px 0;
-    }
   }
 
-/* Medium devices (landscape tablets, 768px and up) */
+  footer p {
+  margin: 0;
+  font-size: 0.8em;
+  padding: 0;
+  }
+
+  #social-icons img {
+    width: 4em;
+    height: 4em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  #logo img {
+    width: 16em;
+  }
+
+  .section-heading {
+    font-size: 2em;
+    padding: 0;
+  }
+  
+  .pizza-base, .pizza-group {
+    width: 18em;
+    padding: 2em 0em;
+    margin-left: 5em;
+  }
+
+  .sauceImages img, .cheeseImages img {
+    width: 18em;
+    padding: 0;
+    margin-left: 0em;
+  }
+
+  .img-left {
+    width: 300px;
+    float: left;
+    margin: 0 15px 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+
   .pizza-base, .pizza-group {
     width: 25em;
     padding: 2em 0em;
@@ -322,8 +317,8 @@ footer p {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
   .pizza-base, .pizza-group {
     width: 30em;
     padding: 2em 0em;
@@ -337,7 +332,6 @@ footer p {
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
   .build-pizza-title {
