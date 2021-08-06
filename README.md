@@ -14,24 +14,6 @@ A site designed to provide customers an interactive way to pre-order their pizza
 ----
 # User Experience (UX)
 
-* ### First Time Visitor Goals
-    
-     * First Time Visitors, should be able to understand the purpose and reason for the site.
-     * First Time Visitors, should be able to easily find the navigation links.       
-     * First Time Visitors, should be able to interact with the site upon landing on the site.
-        
-
-* ### Returning Visitor Goals
-
-     * Returning Visitors, should be able to quickly access the 'build a pizza' element to pre order their pizza.
-     * Returning Visitors, should be able to find where all the stores are located.
-     * Returning Visitors, should have an easy way to contact the stores and in some cases, a specific store.
-     * Returning Visitors, should be able to find the opening hours and contact information of any store.
-     * Returning Visitors, should be able to find social links to be able to engage within the online community.
-     * Returning Visitors, should be able to find out more information about the history of the store/brand.
-
-----
-
 * ## Design
 
 * ### Structure & Mockup Designs
@@ -98,8 +80,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
 * ### Noteable Features
 
 * ### Future Features
-     There are a few features I feel could be added to the site to develop it further.
-     
+
+     As this project is an ongoing project and I intend to develop it further, here are a few features I feel that could be added to improve the user's experience:
+          
      <b>Payment Gateway</b>
      I would like to introduce a payment gateway to the site so that customers could pay for the pizza in advance. This would be a great advantage for both the store and the customers, it would enable a quicker collection time and also prevent staff having to handle money (especially during Coronovirus restrictions).
 
@@ -112,7 +95,8 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
      <b>Store Finder</b>
      It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
-     
+
+
 
 ----
 
@@ -303,24 +287,71 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
 
 *   ### Testing from User Stories and Experience
 
-*   ### First Time Visitor Goals
+     * #### First Time Visitor Goals
+    
+          * First Time Visitors, should be able to understand the purpose and reason for the site.
 
-* ### Returning Visitor Goals
+               When visitors land at the site, they are presented with a large logo for the business and shown the custom form to order their pizza.
 
+          * First Time Visitors, should be able to easily find the navigation links.    
+
+               To follow the natural behavior of most websites, the navigation bar is located at the top of the site and is in a fixed position regardless of where the user scrolls to. This makes sure the user is able to interact with the navigation bar regardless of where they are on the page.
+               For mobile users, the menu bar collapses and displays a 'hamburger symbol' and when clicked, an expanded version of the menu is displayed. This helps make sure the content is always visible to the user as well as making a full size menu available on all screen sizes.
+
+          * First Time Visitors, should be able to interact with the site upon landing on the site.
+
+               The home section of the site contains the main function of the site. Users are instantly able to interact with a the custom pizza form that displays an image of their custom made pizza as they interact with the form.
+
+          <img src="./assets/images/readme/marios-index-page.png" alt="Mario's Index Page"/>
+        
+
+     * #### Returning Visitor Goals
+
+          * Returning Visitors, should be able to quickly access the 'build a pizza' element to pre order their pizza.
+          * Returning Visitors, should be able to find where all the stores are located.
+          * Returning Visitors, should have an easy way to contact the stores and in some cases, a specific store.
+          * Returning Visitors, should be able to find the opening hours and contact information of any store.
+          * Returning Visitors, should be able to find social links to be able to engage within the online community.
+          * Returning Visitors, should be able to find out more information about the history of the store/brand.
 
 * ## Credits
 
 *   ###  Code
 
-https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
+     [Changing An Image On Dropdown Select Option](https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/)
+     I was able to create functions that responded to the checkbox input, but I couldn't work out how to achieve the same on dropdown selections.
+     This tutorial was very useful to achieving the function I needed.
+
+     [Google Maps Info Window](https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx)
+     I needed to create multiple markers on the Google Maps for the store locations. I had tried several methods myself but was unable to achieve the look I was hoping for.
+     Upon searching the internet I found this useful article which helped me add the multiple markers and information boxes.
 
 *   ###  Images/Video
 
  The images I used for the site were sourced from the following sites and photographers.
+     
+     *   Pexels
 
-    *   Unsplash
+          [New Orleans Image](https://www.pexels.com/photo/people-walking-on-paved-road-2432110/) Photo by Kendall Hoopes
 
-    *   Vecteezy
+          [Seattle Image](https://www.pexels.com/photo/photo-of-white-ferris-wheel-across-city-buildings-2322707/) Photo by Garrett Morrow
 
----
+          [Las Vegas Image](https://www.pexels.com/photo/buildings-near-body-of-water-2837909/) Photo by David Vives
+
+          [New York Image](https://www.pexels.com/photo/vehicles-on-road-between-buildings-1389339/) Photo by Helena Lopes
+
+          [Chicago Image](https://www.pexels.com/photo/red-bus-2224424/) Photo by Martin Alargent
+
+     *   Vecteezy
+
+          [Logo Image](https://www.vecteezy.com/free-vector/pizza) by Hakan Kaçar
+
+     *   Freepik
+
+          [Pizza Images](https://www.freepik.com/free-vector/set-cartoon-pizzas-with-different-stuffing-flat-illustration_14625624.htm) designed using resources from Freepik.com
+
+     *   StockVault
+
+          [Old Photo Couple](https://www.stockvault.net/photo/172769/pictures-of-the-20th-century#) Photo By Aka Maraqu
+
 ---
