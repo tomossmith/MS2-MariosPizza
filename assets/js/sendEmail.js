@@ -47,86 +47,16 @@ function sendMail(pizzaForm) {
     checkTomatoes = "Yes";
   }
 
-
-
-  // Pass the checkbox name to the function
-  function getCheckedBoxes(pizza_topping) {
-    var checkboxes = document.getElementsByName(pizza_topping);
-    var checkboxesChecked = [];
-    // loop over them all
-    for (var i = 0; i < checkboxes.length; i++) {
-      // And stick the checked ones onto an array...
-      if (checkboxes[i].checked) {
-        checkboxesChecked.push(checkboxes[i]);
-      }
-    }
-    // Return the array if it is non-empty, or null
-    return checkboxesChecked.length > 0 ? checkboxesChecked : null;
-  }
-
-  // Call as
-  var checkedBoxes = getCheckedBoxes("pizza_topping");
-
-
   // Pricing
 
-  // PRICE CALCULATOR FUNCTIONS
-  // Global Price Function Variables
-  var cheeseSubtotal = 0.00;
-  var sauceSubtotal = 0.00;
+  var sizeCost = Number(document.pizzaForm.size.value);
+  var crustCost = Number(document.pizzaForm.crust.value);
+  var sauceCost = Number(document.pizzaForm.sauceType.value);
+  var cheeseCost = Number(document.pizzaForm.cheeseType.value);
+  var toppingCost = Number($('#toppingSubtotal').html());
+  var totalPrice = sizeCost + crustCost + sauceCost + cheeseCost + toppingCost;
 
-  // Sauce Subtotal
-  $('#sauceType').change(function () {
-    var sauceSubtotal = 0.00;
-    $('#sauceType').each(function () {
-      if ($(this).val() == 'Mariana') {
-        sauceSubtotal += parseFloat(1.00);
-      } else if ($(this).val() == 'BBQ') {
-        sauceSubtotal += parseFloat(1.10);
-      } else {
-        sauceSubtotal += parseFloat(0.00)
-      }
-    });
-
-  });
-
-  // Cheese Subtotal
-  $('.cheese').change(function () {
-    var cheeseSubtotal = 0.00;
-    $('.cheese').each(function () {
-      if ($(this).val() == 'Add Cheese?') {
-        cheeseSubtotal += parseFloat(0.00);
-      } else if ($(this).val() == 'standardCheese') {
-        cheeseSubtotal += parseFloat(1.00);
-      } else if ($(this).val() == 'extraCheese') {
-        cheeseSubtotal += parseFloat(2.00);
-      } else {
-        cheeseSubtotal += parseFloat(0.00)
-      }
-    });
-  });
-
-  // Topping Subtotal
-  function calculateToppingCost() {
-    var numberOfCheckedToppings = $('input:checkbox:checked').length;
-    var toppingSubtotal = numberOfCheckedToppings * 0.50;
-  };
-
-  //Pizza Total Cost
-
-  val_1 = Number($('#sizeSubtotal').html()),
-    val_2 = Number($('#crustSubtotal').html()),
-    val_3 = Number($('#toppingSubtotal').html()),
-    val_4 = Number($('#cheeseSubtotal').html()),
-    val_5 = Number($('#sauceSubtotal').html());
-
-
-  var subtotal = 1 + val_1 + val_2 + val_3 + val_4 + val_5;
-  var total = subtotal.toFixed(Math.max(((subtotal + '').split(".")[1] || "").length, 2));
-
-  console.log(subtotal);
-  console.log(total);
-
+  // Selection
   var baseSize = $("#size option:selected").text();
   var crustType = $("#crust option:selected").text();
   var sauceType = $("#sauceType option:selected").text();
@@ -153,7 +83,7 @@ function sendMail(pizzaForm) {
       "olives": checkOlives,
       "onions": checkOnions,
       "tomatoes": checkTomatoes,
-      "price": total,
+      "price": totalPrice,
 
     })
     .then(

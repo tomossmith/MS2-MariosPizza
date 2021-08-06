@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 // IMAGE SHOW/HIDE FUNCTIONS
 
+// CREDIT: https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/
 // Sauce Dropdown Function   
 $(document).ready(function sauceDropdownFunction() {
     $('#sauceType').on('change', function () {
@@ -34,8 +35,6 @@ $(document).ready(function sauceDropdownFunction() {
         $("#show" + ingredientVariable).show();
     });
 });
-
-// CREDIT: https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/
 
 // Cheese Dropdown Function  
 

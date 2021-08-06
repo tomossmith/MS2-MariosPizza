@@ -112,10 +112,6 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
      <b>Store Finder</b>
      It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
-
-     <b>Custom Map Markers</b>
-     At present it may feel like the map looks very uniform to the usual Google Maps, by adding custom markers with the store logo on them it could help give the map a more custom feel.
-
      
 
 ----
@@ -140,6 +136,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
     *   GitHub - To host the website repositry.
     *   Tiny PNG - Used to help reduce the filesize of the high quality images
     *   Adobe Photoshop & Illustrator
+    * http://ami.responsivedesign.is/#
 
 
 * ### Integrated API's
@@ -314,6 +311,8 @@ I found that if all of Google Chrome's extensions were disabled, then the error 
 * ## Credits
 
 *   ###  Code
+
+https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
 
 *   ###  Images/Video
 
