@@ -167,8 +167,10 @@ A site designed to provide customers an interactive way to pre-order their pizza
           To deploy the site I carried out the following steps:
                - <b>Go To</b> your [GitHub](www.github.com) repository,
                -    In the top right corner <b>Click Settings</b>
+               <img src="./assets/images/readme/deploy-1.jpg" alt="GitHub Settings"/> 
                - <b>Scroll Down</b> to GitHub Pages
                - <b>Select</b> Main/Master branch from the dropdown menu.
+               <img src="./assets/images/readme/deploy-2.jpg" alt="GitHub Branch Settings"/> 
                - <b>Click Save</b>
 
           A link will be generated for your live site.
@@ -183,22 +185,33 @@ A site designed to provide customers an interactive way to pre-order their pizza
           <b>How to clone the repositry</b>
           1. On GitHub, navigate to the repositry location, or [Click Here](https://github.com/tomossmith/mariospizza)
           2. On the right hand side of the page you will see a green button labelled 'Code'. Click This
+
+          <img src="./assets/images/readme/clone-1.jpg" alt="GitHub Repositry Cloning"/> 
+
           3. A menu will appear with different ways of cloning the repositry.
 
                <b>Clone the Repositry By HTTPS</b>
                a. From the previous step, click on the clipboard button (located after the address) under the 'HTTPS' tab.
                b. Open terminal and change directory to the area you wish to load the repositry into.
+
+               <img src="./assets/images/readme/clone-2.jpg" alt="GitHub Repositry Cloning"/> 
+
                c. Once you're in the required directory, enter the command 'git clone' and paste the URL that you added to the clipboard in the previous step.
                - Press Enter
 
                <b>Clone the Repositry to GitHub Desktop</b>
                a. Follow steps 1,2 and 3 above.
                b. Click 'Open with GitHub Desktop
+
+               <img src="./assets/images/readme/clone-desktop.png" alt="GitHub Repositry Cloning To Desktop"/> 
+
                c. Follow the prompts within the GitHub Desktop popups to complete the clone.
 
                <b>How to download a Zip file of the repositry</b>
                a. Follow steps 1,2 and 3 above.
                b. Select the option 'Download Zip'
+
+               <img src="./assets/images/readme/clone-download.png" alt="GitHub Repositry Cloning By Download"/> 
 
                Once you have cloned the repositry, you will need to obtain your own Google Maps API key.
                To obtain your own key, you can follow the instructions on the Google Website [Click Here](https://developers.google.com/maps/documentation/maps-static/get-api-key)
