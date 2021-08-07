@@ -60,7 +60,6 @@ html body {
   left: 0;
   width: 100%;
   background-color: #000;
-  z-index: 10;
   border-bottom: #FED8AD solid 0.1em;
 }
 
@@ -104,6 +103,10 @@ a.navbar-brand {
 }
 
 /* Pizza Form */
+
+#home {
+  margin-top: 200px;
+}
 
 #build-pizza-section {
   padding: 2em;
@@ -224,8 +227,18 @@ footer a:hover {
 
 @media only screen and (min-width: 300px) {
 
+  #home {
+    margin-top: 100px;
+  }
+
+
   #logo img {
     width: 10em;
+  }
+
+  .section-heading {
+    font-size: 1.8em;
+    padding: 0;
   }
 
   .pizza-base,
@@ -347,6 +360,10 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+
+  #home {
+    margin-top: 150px;
+  }
 
   .pizza-base,
   .pizza-group {
