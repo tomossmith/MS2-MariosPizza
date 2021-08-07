@@ -32,25 +32,25 @@ font-size: 8em;
 }
 
 #error-page-img img {
-margin-top: 3em;
-width: 70%;
+margin-top: 2em;
+width: 45%;
 }
 #error-page-subtitle{
   color: #fff;
-  font-size: 4vw;
+  font-size: 3vw;
   }
   
   #error-page-button{
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Otomanopee One', 'Roboto';
     background: #02a892;
     border-radius: 10px;
     padding: 4px;
     color: #fff; 
-    margin: 2em auto;
+    margin: 0.5em auto;
     display: block;
     text-decoration: none;
-    width: 80%;
+    width: 30%;
   }
 
 /* Navigation */
