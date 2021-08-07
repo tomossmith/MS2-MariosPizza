@@ -12,11 +12,11 @@ This is the README file for my Code Institute MS2 project site, Mario's Pizza
 A site designed to provide customers an interactive way to pre-order their pizza from their favourite Mario's Store
 
 ----
-# User Experience (UX)
+# <b>User Experience (UX)</b>
 
-* ## Design
+* ## <b>Design</b>
 
-     * ### Structure & Mockup Designs
+     * ### <b>Structure & Mockup Designs</b>
 
           I started my designs by looking at other similar sites for some inspiration.
           I felt that a key element of each site offering a similar service was that most of the sites were one page designs. Also, the key information that the customers needed were presented to them upon landing at the site. So when I designed the site, I wanted to make sure that the custom pizza order was a main feature of the first image of the site.
@@ -39,10 +39,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           <b>Mobile Wireframe Design</b>
 
-          <img src="./assets/images/readme/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="900" height="400">
+          <img src="./assets/images/readme/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="800" height="500">
 
-
-     * ### Colour scheme   
+     * ### <b>Colour Scheme</b>   
     
           <img src="./assets/images/readme/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
 
@@ -50,16 +49,18 @@ A site designed to provide customers an interactive way to pre-order their pizza
           I began by using a couple of the colors that I used to design the logo. I entered the color codes into the site and it came up with other colors that would work well in combination with the colors I had already entered.
           I tend to use this feature by Adobe quite often, as I feel it helps me build a brand from some of my initial ideas.
 
-     * ### Typography 
+     * ### <b>Typography</b> 
 
           When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
           I wanted the font to be appropriate so that I could use it for the logo text and also the main site text. This would then help maintain a nice continuity within the design and also help create the italian brand I was aiming for.
 
-          The main font is Otomanopee One[Link](https://fonts.google.com/specimen/Otomanopee+One)
-    
-          The secondary font is Roboto [Link](https://fonts.google.com/specimen/Roboto?query=roboto#standard-styles)
+          I have used Google to source the fonts and these are loaded within the head of the page.
 
-     * ### What I changed from my mockup designs
+          The main font is [Otomanopee One](https://fonts.google.com/specimen/Otomanopee+One)
+    
+          The secondary font is [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#standard-styles)
+
+     * ### <b>What I changed from my mockup designs</b>
 
           Given that the mockup designs had a small amount of detail, the construction process was where I experimented more with some of the design in terms of colors and fonts and layouts.
 
@@ -71,14 +72,14 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           I chose to remove the pins to the right of the map because I felt that the map was already self explanatory and all the pins were visible on the map. By having them displayed to the side of the map also could confuse the visitor and duplicate the information.
 ----
-* ## Images
-    * #### Logo
+* ## <b>Images</b>
+    * #### <b>Logo</b>
         I designed the logo for the site myself. I had an idea of the type of logo I was looking for when I first thought of the idea and so I thought it would be easier to create the logo myself to achieve the feel I was looking for.
         The chef image was taken from a vector file from Vecteezy, then I added the remaining elements myself.
         By creating the logo myself, I was also able to generate a custom favicon for the site.
         I used Adobe Illustrator to create the logo.
 
-    * #### 'Build A Pizza' Images
+    * #### <b>'Build A Pizza' Images</b>
         As I needed the ingredients for the pizza to be individual layers that would be visible, even when all the toppings are selected. The best way I could achieve this was to use a vector image of a pizza. (Sourced from Vecteezy)
         I was then able to extract each topping element into individual layers and export as individual image files.
         The ingredients were layed out with least amount of overlapping and exported with a transparent background.
@@ -86,9 +87,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 ----
 
-* ## Features
+* ## <b>Features</b>
 
-     * ### Noteable Features
+     * ### <b>Noteable Features</b>
 
           * <b>Fixed Navigation Bar</b> - In order to navigate quickly and easily around the site, a fixed navigation bar is always visible at all stages of scrolling across the site.
 
@@ -100,7 +101,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           * <b>Contact Information</b> - In the footer of the site, all the contact information is avaiable including all of the business's social profiles. A navigation link within the navigation bar will also scroll the user quickly to the bottom of the page to display this information.
 
-     * ### Future Features
+          * <b>404 Page</b> - The site has a custom 404 page to prevent any confusion if any errors occur for the customer. A 404 helps the user understand the reason for the error and also provides them with a link to return to the homepage.
+
+     * ### <b>Future Features</b>
 
           As this project is an ongoing project and I intend to develop it further, here are a few features I feel that could be added to improve the user's experience:
                
@@ -117,28 +120,49 @@ A site designed to provide customers an interactive way to pre-order their pizza
           * <b>Store Finder</b>
           It would be good to add a 'find a store' feature. Interacting with the google maps API, it could display the nearest store based on the user's location or a location that they enter. This would make finding the nearest store simpler and quicker.
 
+          * <b>Alternative Pizza Image Loading/Managing</b>
+          To improve load times for the site, I would like to change the way that the pizza images are initially loaded to the site and how they appear when called upon.
+          I hope to do this by using Javascript to 'Lazy Load' the images or by changing the function to remove/add the required image source when the customer chooses that ingredient.
 ---
 
-* ## Key Components
+* ## <b>User Stories</b>
 
-     * ### Frameworks, Programmes and Libraries:
+     This section is designed to generate possible scenarios of the typical end user that would use this website. 
+     This will help ensure end user requirements are designed into the website.
 
-     *   HTML5
-     *   CSS
-     *   Javascript
-     *   JQuery - Used to simplify and shorten some Javascript commands.
-     *   Bootstrap - Used for layouts, styling and custom components such as navigation bar or modals.
-     *   Fontawesome - Used for generating the pizza icon's for the titles.
-     *   Google fonts - Used to pull the required fonts into the website.
-     *   Markdown - Used to write up the README file.
-     *   Git - User for Version Control
-     *   [GitHub](https://github.com/) - To host the website repositry.
-     *   [Tiny PNG](https://tinypng.com/) - Used to help reduce the filesize of the high quality images
-     *   Adobe Photoshop & Illustrator
-     *   [Am I Responsive](http://ami.responsivedesign.is)
+     - When I visit the site, I want to know that I have landed on the correct site that I intended to visit.
+
+     - I need to be able to navigate to the key elements of the site quickly.
+
+     - I consider Pizza to be a fast food service, and its important that I can quickly get to the point of ordering on the site. I often like to order a pizza when on the commute home from work and to collect it on the way. 
+
+     - When out of town or visiting a friend, it's important that I am able to see if there are any stores nearby and the opening hours for that store.
+
+     - Most businesses now have a strong online presence within social media. Often using their social media platforms to promote new items or special offers. Being able to link to the business's social media is very useful.
+
+---
+
+* ## <b>Key Components</b>
+
+     * ### <b>Frameworks, Programmes and Libraries:</b>
+
+          *   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+          *   [CSS](https://en.wikipedia.org/wiki/CSS)
+          *   [Javascript](https://www.javascript.com/)
+          *   [JQuery](https://jquery.com/) - Used to simplify and shorten some Javascript commands.
+          *   [Bootstrap](https://getbootstrap.com/) - Used for layouts, styling and custom components such as navigation bar or modals.
+          *   [Fontawesome](https://fontawesome.com/) - Used for generating the pizza icon's for the titles.
+          *   [Google Fonts](https://fonts.google.com/) - Used to pull the required fonts into the website.
+          *   [Google Maps](https://developers.google.com/maps)
+          *   [EmailJS](https://www.emailjs.com/)
+          *   [Markdown](https://en.wikipedia.org/wiki/Markdown) - Used to write up the README file.
+          *   [GitHub](https://github.com/) - To host the website repositry.
+          *   [Tiny PNG](https://tinypng.com/) - Used to help reduce the filesize of the high quality images
+          *   [Adobe Photoshop & Illustrator](https://www.adobe.com/uk/)
+          *   [Am I Responsive](http://ami.responsivedesign.is)
 
 
-     * ### Integrated API's
+     * ### <b>Integrated API</b>
           * <b>Google Maps</b>
 
                I decided the chose to integrate the Google Maps API to allow users to see where Mario's Pizza stores are located.
@@ -168,13 +192,17 @@ A site designed to provide customers an interactive way to pre-order their pizza
                - <b>Go To</b> your [GitHub](www.github.com) repository,
                -    In the top right corner <b>Click Settings</b>
                <img src="./assets/images/readme/deploy-1.jpg" alt="GitHub Settings"/> 
+               <br>
                - <b>Scroll Down</b> to GitHub Pages
+               <br>
                - <b>Select</b> Main/Master branch from the dropdown menu.
-               <img src="./assets/images/readme/deploy-2.jpg" alt="GitHub Branch Settings"/> 
+               <br>
                - <b>Click Save</b>
-
-          A link will be generated for your live site.
-          Initially all the content had not loaded correctly onto the site. After a force reload on my browser, the site displayed correctly.
+               <br>
+               A link will be generated for your live site.
+               <br>
+               Initially all the content had not loaded correctly onto the site. After a force reload on my browser, the site displayed correctly.
+               <img src="./assets/images/readme/deploy-2.jpg" alt="GitHub Branch Settings"/> 
 
      *    ### <b>Running the code locally, using your API Keys.</b>
 
@@ -185,43 +213,49 @@ A site designed to provide customers an interactive way to pre-order their pizza
           <b>How to clone the repositry</b>
           1. On GitHub, navigate to the repositry location, or [Click Here](https://github.com/tomossmith/mariospizza)
           2. On the right hand side of the page you will see a green button labelled 'Code'. Click This
+          3. A menu will appear with different ways of cloning the repositry.
 
           <img src="./assets/images/readme/clone-1.jpg" alt="GitHub Repositry Cloning"/> 
 
-          3. A menu will appear with different ways of cloning the repositry.
-
-               <b>Clone the Repositry By HTTPS</b>
+          <b>Clone the Repositry By HTTPS</b>
+               <br>
                a. From the previous step, click on the clipboard button (located after the address) under the 'HTTPS' tab.
+               <br>
                b. Open terminal and change directory to the area you wish to load the repositry into.
-
-               <img src="./assets/images/readme/clone-2.jpg" alt="GitHub Repositry Cloning"/> 
-
+               <br>
                c. Once you're in the required directory, enter the command 'git clone' and paste the URL that you added to the clipboard in the previous step.
                - Press Enter
 
-               <b>Clone the Repositry to GitHub Desktop</b>
+          <img src="./assets/images/readme/clone-2.jpg" alt="GitHub Repositry Cloning"/> 
+
+          <br>
+          <b>Clone the Repositry to GitHub Desktop</b>
+               <br>
                a. Follow steps 1,2 and 3 above.
+               <br>
                b. Click 'Open with GitHub Desktop
-
-               <img src="./assets/images/readme/clone-desktop.png" alt="GitHub Repositry Cloning To Desktop"/> 
-
+               <br>
                c. Follow the prompts within the GitHub Desktop popups to complete the clone.
 
-               <b>How to download a Zip file of the repositry</b>
+          <img src="./assets/images/readme/clone-desktop.png" alt="GitHub Repositry Cloning To Desktop"/> 
+
+          <b>How to download a Zip file of the repositry</b>
+               <br>
                a. Follow steps 1,2 and 3 above.
+               <br>
                b. Select the option 'Download Zip'
 
-               <img src="./assets/images/readme/clone-download.png" alt="GitHub Repositry Cloning By Download"/> 
+          <img src="./assets/images/readme/clone-download.png" alt="GitHub Repositry Cloning By Download"/> 
 
-               Once you have cloned the repositry, you will need to obtain your own Google Maps API key.
-               To obtain your own key, you can follow the instructions on the Google Website [Click Here](https://developers.google.com/maps/documentation/maps-static/get-api-key)
+          Once you have cloned the repositry, you will need to obtain your own Google Maps API key.
+          To obtain your own key, you can follow the instructions on the Google Website [Click Here](https://developers.google.com/maps/documentation/maps-static/get-api-key)
 
-               Once you have the key you can enter it on the final line of script within the index.html page.
+          Once you have the key you can enter it on the final line of script within the index.html page.
 
-               The script is formatted as follows: src="https://maps.googleapis.com/maps/api/js?key= ENTER YOUR KEY HERE.
+          The script is formatted as follows: src="https://maps.googleapis.com/maps/api/js?key= ENTER YOUR KEY HERE.
 ----
 
-* ## Problems 
+* ## <b>Problems</b> 
 
      <b>Page Background</b>
 
@@ -235,7 +269,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
      <b>Responsive Pizza Images</b>
 
-     Despite using Bootstrap as part of the site, the pizza images were very difficult to make responsive. The pizza images are all generated as layers for each item, and when I used Bootstrap to try to keep the images responsive, the layers ended up being scattered accross the site.
+     Despite using Bootstrap as part of the site and also using 'vw' units for the sizing, the pizza images were very difficult to make responsive. The pizza images are all generated as layers for each item, and when I used Bootstrap to try to keep the images responsive, the layers ended up being scattered accross the site.
      To resolve the issue, I had to create individual media queries for several screen widths in order to make sure the images stack correctly.
 
 ----
@@ -302,7 +336,8 @@ A site designed to provide customers an interactive way to pre-order their pizza
           My ratings were quite average to begin with, and the least scoring rating was for my website performance.
           I found that due to the several scripts I had placed in the head of my document, it was causing the website to take longer than it should to load. The tool advised me to place these in the end of my body tags in order to load them once the website content had been loaded. By doing so, this increased my score by nearly 20 points and a useful tool to use in the future.
 
-          Although my overall performance rating is still in the amber category, I belive this is because the images that I am loading at startup of the site are causing an additional delay. At the moment, I am not too sure how I could address that issue, but it would be something worth looking into to further develop this site in the future.
+          Although my overall performance rating is still in the amber category, I belive this is because the images that I am loading at startup of the site are causing an additional delay. For future development I hope to address this issue by using Javascript to 'Lazy Load' the images. Where Javascript can delay the loading of the images until a specified criteria is met.
+          Another alternative would be to change the method that the pizza imaging operates. Instead of using JQuery to show/hide images, it would be possible to remove all reference to the source of the image, and re-instate the image source as part of the function when the criteria is met.
 
           Here were my final scores:
 
@@ -319,7 +354,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
 
 
-     *   ###  <b>Browser compatibility</b>
+     *   ###  <b>Browser Compatibility</b>
           
           <b>Google Chrome</b>
 
@@ -334,10 +369,10 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           I believe this would apply to the version of Google Maps API and Internet Explorer that I was using.
 
-          <b>Safari Brower (Using an iPhone)</b> - The website functions and displays as expected.
+          <b>Safari Browser (Using an iPhone)</b> - The website functions and displays as expected.
 
 
-     *   ###  Link Testing
+     *   ###  <b>Link Testing</b>
 
           All of the links for the site were tested by simply navigating the site in all combinations.
 
@@ -345,9 +380,33 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           All of the links behaved as they expected.
 
-     *   ### Testing from User Stories and Experience
+     *   ### <b>Testing from User Stories and Experience</b>
 
-          * #### First Time Visitor Goals
+          * #### <b>User Stories Testing</b>
+
+               - When I visit the site, I want to know that I have landed on the correct site that I intended to visit.
+
+               > The initial page that loads when landing on the page has a clear logo of the business displayed in the navigation bar and the key purpose of the site is visible within the first 1/3 of the page.
+
+               - I need to be able to navigate to the key elements of the site quickly.
+
+               > The page has a fixed navigation bar at the top that will remain on screen throughout the visit on all devices. Links are placed within the navigation bar to all of the sections for the site.
+
+               - I consider Pizza to be a fast food service, and its important that I can quickly get to the point of ordering on the site. I often like to order a pizza when on the commute home from work and to collect it on the way. 
+
+               > The customer is presented with the order form in the first section of the site. The site has been built so that the customer is able to begin the order straight away at the site and see links to all of the other sections of the page as the initial landing point.
+
+               - When out of town or visiting a friend, it's important that I am able to see if there are any stores nearby and the opening hours for that store.
+
+               > Within the Locations section, there is an interactive map for customers to use to see where all of Mario's stores are located.
+               When clicking a marker, the customer is able to see all the details for the store including its opening hours.
+
+               - Most businesses now have a strong online presence within social media. Often using their social media platforms to promote new items or special offers. Being able to link to the business's social media is very useful.
+
+               > The customer is able to find all the social links for the store in the contact us section. This can be located within the footer of the page and can be navigated to by scrolling to the bottom or using the contact navigation link.
+               When clicking on a social link, the page will load in a new tab and will also prevent passing the referrer information to the target website.
+
+          * #### <b>First Time Visitor Goals</b>
     
                * First Time Visitors, should be able to understand the purpose and reason for the site.
 
@@ -365,7 +424,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
                     <img src="./assets/images/readme/marios-index-page.png" alt="Mario's Index Page"/>
         
 
-          * #### Returning Visitor Goals
+          * #### <b>Returning Visitor Goals</b>
 
                * Returning Visitors, should be able to quickly access the 'build a pizza' element to pre order their pizza.
 
@@ -399,9 +458,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
                     <img src="./assets/images/readme/about.png" alt="About Section"/>
 
-* ## Credits
+* ## <b>Credits</b>
 
-     *   ###  Code
+     *   ###  <b>Code</b>
 
           [Changing An Image On Dropdown Select Option](https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/)
           I was able to create functions that responded to the checkbox input, but I couldn't work out how to achieve the same on dropdown selections.
@@ -411,7 +470,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
           I needed to create multiple markers on the Google Maps for the store locations. I had tried several methods myself but was unable to achieve the look I was hoping for.
           Upon searching the internet I found this useful article which helped me add the multiple markers and information boxes.
 
-     *   ###  Images/Video
+     *   ###  <b>Images/Video</b>
 
           The images I used for the site were sourced from the following sites and photographers.
           
