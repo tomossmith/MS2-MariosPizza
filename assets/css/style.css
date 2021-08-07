@@ -205,6 +205,11 @@ footer a {
   color: #fff;
 }
 
+footer a:hover{
+  text-decoration: none;
+  color: #FED8AD;
+}
+
 #social-icons img {
   width: 5em;
   height: 5em;
