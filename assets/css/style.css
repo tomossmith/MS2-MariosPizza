@@ -26,32 +26,33 @@ html body {
 }
 
 /* 404 Page Styling */
-#error-page-title{
-color: #fff;
-font-size: 8em;
+#error-page-title {
+  color: #fff;
+  font-size: 8em;
 }
 
 #error-page-img img {
-margin-top: 2em;
-width: 45%;
+  margin-top: 2em;
+  width: 45%;
 }
-#error-page-subtitle{
+
+#error-page-subtitle {
   color: #fff;
   font-size: 3vw;
-  }
-  
-  #error-page-button{
-    font-size: 3vw;
-    font-family: 'Otomanopee One', 'Roboto';
-    background: #02a892;
-    border-radius: 10px;
-    padding: 4px;
-    color: #fff; 
-    margin: 0.5em auto;
-    display: block;
-    text-decoration: none;
-    width: 30%;
-  }
+}
+
+#error-page-button {
+  font-size: 3vw;
+  font-family: 'Otomanopee One', 'Roboto';
+  background: #02a892;
+  border-radius: 10px;
+  padding: 4px;
+  color: #fff;
+  margin: 0.5em auto;
+  display: block;
+  text-decoration: none;
+  width: 30%;
+}
 
 /* Navigation */
 .navbar {
@@ -180,12 +181,15 @@ a.navbar-brand {
 
 .about-section {
   width: 100%;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .img-left {
   width: 300px;
   float: left;
-  margin: 0 15px 0;
+  margin: 0;
 }
 
 /*FOOTER */
@@ -205,7 +209,7 @@ footer a {
   color: #fff;
 }
 
-footer a:hover{
+footer a:hover {
   text-decoration: none;
   color: #FED8AD;
 }
@@ -216,41 +220,44 @@ footer a:hover{
   text-decoration: none;
   padding: 0.5em;
   margin-bottom: 2em;
-  
+
 }
 
 @media only screen and (min-width: 300px) {
 
-    #logo img {
+  #logo img {
     width: 10em;
   }
 
-  .pizza-base, .pizza-group  {
+  .pizza-base,
+  .pizza-group {
     width: 14em;
-    padding: 2em 0em;
-    margin-left: 1.5em;
+    padding-bottom: 1em;
+    margin-left: 3em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 14em;
     padding: 0;
-    margin-left: 0;
+    margin-left: 0em;
   }
 
-  #location .section-heading, #about .section-heading {
+  #location .section-heading,
+  #about .section-heading {
     font-size: 2em;
-    padding: 1em 0 ;
+    padding: 1em 0;
   }
 
   footer h3.section-heading {
     padding-top: 0.5em;
-    font-size: 0.8em;
+    font-size: 5vw;
   }
 
   footer p {
-  margin: 0;
-  font-size: 0.4em;
-  padding: 0;
+    margin: 0;
+    font-size: 0.4em;
+    padding: 0;
   }
 
   #social-icons img {
@@ -271,13 +278,15 @@ footer a:hover{
     padding: 0;
   }
 
-  .pizza-base, .pizza-group {
+  .pizza-base,
+  .pizza-group {
     width: 14em;
     padding: 2em 0em;
     margin-left: 4.5em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 14em;
     padding: 0;
     margin-left: 0;
@@ -290,13 +299,13 @@ footer a:hover{
 
   footer h3.section-heading {
     padding-top: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.5vw;
   }
 
   footer p {
-  margin: 0;
-  font-size: 0.8em;
-  padding: 0;
+    margin: 0;
+    font-size: 1.2vw;
+    padding: 0;
   }
 
   #social-icons img {
@@ -316,14 +325,16 @@ footer a:hover{
     font-size: 2em;
     padding: 0;
   }
-  
-  .pizza-base, .pizza-group {
+
+  .pizza-base,
+  .pizza-group {
     width: 18em;
     padding: 2em 0em;
     margin-left: 5em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 18em;
     padding: 0;
     margin-left: 0em;
@@ -338,13 +349,15 @@ footer a:hover{
 
 @media only screen and (min-width: 768px) {
 
-  .pizza-base, .pizza-group {
+  .pizza-base,
+  .pizza-group {
     width: 25em;
     padding: 2em 0em;
     margin-left: 7em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 25em;
     padding: 0;
     margin-left: 0em;
@@ -353,13 +366,15 @@ footer a:hover{
 
 @media only screen and (min-width: 992px) {
 
-  .pizza-base, .pizza-group {
+  .pizza-base,
+  .pizza-group {
     width: 30em;
     padding: 2em 0em;
     margin-left: 13em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 30em;
     padding: 0;
     margin-left: 0em;
@@ -372,14 +387,16 @@ footer a:hover{
     padding-bottom: 1em;
   }
 
-  .pizza-base, .pizza-group {
+  .pizza-base,
+  .pizza-group {
     width: 38em;
     padding: 2em 0em;
     margin-top: 0em;
     margin-left: 0em;
   }
 
-  .sauceImages img, .cheeseImages img {
+  .sauceImages img,
+  .cheeseImages img {
     width: 38em;
     padding: 0;
     margin-left: 0em;
