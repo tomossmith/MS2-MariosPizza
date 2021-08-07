@@ -24,9 +24,9 @@ $(document).ready(function () {
     console.log("document loaded");
 });
 
-// IMAGE SHOW/HIDE FUNCTIONS
+// IMAGE SHOW/HIDE FUNCTIONS //
+// CREDIT (For Functions 'Sauce Dropdown & Cheese Dropdown'): https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/
 
-// CREDIT: https://tutorialdeep.com/knowhow/change-image-on-dropdown-select-option-jquery/
 // Sauce Dropdown Function   
 $(document).ready(function sauceDropdownFunction() {
     $('#sauceType').on('change', function () {
@@ -37,7 +37,6 @@ $(document).ready(function sauceDropdownFunction() {
 });
 
 // Cheese Dropdown Function  
-
 $(document).ready(function cheeseDropdownFunction() {
     $('#cheeseType').on('change', function () {
         var ingredientVariable = $("#cheeseType option:selected").text();
@@ -59,9 +58,7 @@ $('input[name="pizza_topping"]').change(function toppings() {
     }
 });
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// PRICE CALCULATOR FUNCTIONS
+// PRICE CALCULATOR FUNCTIONS //
 
 // Size Subtotal
 $('.size').change(function () {
@@ -149,7 +146,6 @@ function pizzaTotal() {
     document.getElementById("pizzaTotalCost").innerHTML = total.toFixed(2);
 }
 
-
 //Pizza Reset
 function pizzaReset() {
     var img_1 = document.getElementById("img_1")
@@ -174,7 +170,6 @@ function pizzaReset() {
     $(img_9).hide();
     $(img_10).hide();
     $(img_11).hide();
-
     document.getElementById("size").value = "0";
     document.getElementById("crust").value = "0";
     document.getElementById("sauceType").value = "0";

@@ -25,6 +25,34 @@ html body {
   background-color: #000;
 }
 
+/* 404 Page Styling */
+#error-page-title{
+color: #fff;
+font-size: 8em;
+}
+
+#error-page-img img {
+margin-top: 3em;
+width: 70%;
+}
+#error-page-subtitle{
+  color: #fff;
+  font-size: 4vw;
+  }
+  
+  #error-page-button{
+    font-size: 4vw;
+    font-family: 'Otomanopee One', 'Roboto';
+    background: #02a892;
+    border-radius: 10px;
+    padding: 4px;
+    color: #fff; 
+    margin: 2em auto;
+    display: block;
+    text-decoration: none;
+    width: 80%;
+  }
+
 /* Navigation */
 .navbar {
   position: fixed;

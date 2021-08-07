@@ -431,6 +431,8 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
                [Logo Image](https://www.vecteezy.com/free-vector/pizza) by Hakan Kaçar
 
+               [404 Error Image](https://www.vecteezy.com/free-vector/modern) by Nouri Atchabao
+
           *   <b>Freepik</b>
 
                [Pizza Images](https://www.freepik.com/free-vector/set-cartoon-pizzas-with-different-stuffing-flat-illustration_14625624.htm) designed using resources from Freepik.com

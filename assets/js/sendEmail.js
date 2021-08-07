@@ -62,7 +62,6 @@ function sendMail(pizzaForm) {
   var sauceType = $("#sauceType option:selected").text();
 
   // Send Email
-
   emailjs.send("service_be3wq2q", "mario", {
       "from_name": pizzaForm.name.value,
       "from_email": pizzaForm.emailaddress.value,
@@ -84,7 +83,6 @@ function sendMail(pizzaForm) {
       "onions": checkOnions,
       "tomatoes": checkTomatoes,
       "price": totalPrice,
-
     })
     .then(
       function (response) {
@@ -115,6 +113,5 @@ function sendMail(pizzaForm) {
         console.log("FAILED", error);
         alert("Something went wrong, please check you have completed all the fields correctly and try again. If you continue to receive the error, please call us on +021 2431 4505")
       })
-
-  return false; // To block from loading a new page
+  return false;
 }
