@@ -106,7 +106,7 @@ function sendMail(pizzaForm) {
         document.getElementById("fullname").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("emailaddress").value = "";
-        document.getElementById("store").value = "0";
+        document.getElementById("store").value = "";
         document.getElementById("time").value = "00:00";
         $("#pizzaTotalCost").text("")      
       },

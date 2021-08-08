@@ -123,6 +123,9 @@ A site designed to provide customers an interactive way to pre-order their pizza
           * <b>Alternative Pizza Image Loading/Managing</b>
           To improve load times for the site, I would like to change the way that the pizza images are initially loaded to the site and how they appear when called upon.
           I hope to do this by using Javascript to 'Lazy Load' the images or by changing the function to remove/add the required image source when the customer chooses that ingredient.
+
+          * <b>Collection Order Time Validation.</b>
+          It would be useful to apply a validation to the time field within the form to prevent customers from placing a order for a collection time that has already passed for that day. This would prevent the store from having to call the customer to discuss the error within the order.
 ---
 
 * ## <b>User Stories</b>
