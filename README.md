@@ -14,7 +14,69 @@ A site designed to provide customers an interactive way to pre-order their pizza
 ----
 # <b>User Experience (UX)</b>
 
+*   ## <b>User Stories and Experience</b>
+
+     * ### <b>User Experience</b>
+
+          This section is designed to generate possible scenarios of the typical end user that would use this website. 
+          This will help ensure end user requirements are designed into the website.
+
+          - When I visit the site, I want to know that I have landed on the correct site that I intended to visit.
+
+          - I need to be able to navigate to the key elements of the site quickly.
+
+          - I consider Pizza to be a fast food service, and its important that I can quickly get to the point of ordering on the site. I often like to order a pizza when on the commute home from work and to collect it on the way. 
+
+          - When out of town or visiting a friend, it's important that I am able to see if there are any stores nearby and the opening hours for that store.
+
+          - Most businesses now have a strong online presence within social media. Often using their social media platforms to promote new items or special offers. Being able to link to the business's social media is very useful.
+
+     * ### <b>First Time Visitor Goals</b>
+    
+          * First Time Visitors, should be able to understand the purpose and reason for the site.
+
+          * First Time Visitors, should be able to easily find the navigation links.    
+
+          * First Time Visitors, should be able to interact with the site upon landing on the site.
+      
+     * ### <b>Returning Visitor Goals</b>
+
+          * Returning Visitors, should be able to quickly access the 'build a pizza' element to pre order their pizza.
+
+          * Returning Visitors, should be able to find where all the stores are located.
+
+          * Returning Visitors, should have an easy way to contact the stores and in some cases, a specific store. Visitors should also be able to find social links to engage within the online community.
+
+          * Returning Visitors, should be able to find the opening hours and contact information of any store.
+
+          * Returning Visitors, should be able to find out more information about the history of the store/brand.
+
 * ## <b>Design</b>
+
+     * ### <b>Colour Scheme</b>   
+    
+          <img src="./assets/images/readme/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
+
+          To choose a compatible color scheme, I decided to use Adobe Color to find colors that would work well together.
+          I began by using a couple of the colors that I used to design the logo. I entered the color codes into the site and it came up with other colors that would work well in combination with the colors I had already entered.
+          I tend to use this feature by Adobe quite often, as I feel it helps me build a brand from some of my initial ideas.
+
+     * ### <b>Typography</b> 
+
+          When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
+          I wanted the font to be appropriate so that I could use it for the logo text and also the main site text. This would then help maintain a nice continuity within the design and also help create the italian brand I was aiming for.
+
+          I have used Google to source the fonts and these are loaded within the head of the page.
+
+          The main font is [Otomanopee One](https://fonts.google.com/specimen/Otomanopee+One)
+    
+          The secondary font is [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#standard-styles)
+
+     * ### <b>Imagery</b> 
+
+          As this site is for a fast food order service, I feel that the imaging for the site needs to remain simple and not clutter the site. 
+          The actual ordering of the pizza will be interactive and when the user clicks each specific topping, it will add the image to the pizza so that the customer can see an image of their order.
+          I intend to use the logo of the business to brand as much of the site and emails as possible and show an old image of the business founder in the about section of the site.
 
      * ### <b>Structure & Mockup Designs</b>
 
@@ -40,25 +102,6 @@ A site designed to provide customers an interactive way to pre-order their pizza
           <b>Mobile Wireframe Design</b>
 
           <img src="./assets/images/readme/wireframes/mobile-wireframe.png" alt="Mario's Pizza - Mobile Wireframe Design" width="800" height="500">
-
-     * ### <b>Colour Scheme</b>   
-    
-          <img src="./assets/images/readme/color-scheme.jpeg" alt="Site Color Scheme" width="400" height="200">
-
-          To choose a compatible color scheme, I decided to use Adobe Color to find colors that would work well together.
-          I began by using a couple of the colors that I used to design the logo. I entered the color codes into the site and it came up with other colors that would work well in combination with the colors I had already entered.
-          I tend to use this feature by Adobe quite often, as I feel it helps me build a brand from some of my initial ideas.
-
-     * ### <b>Typography</b> 
-
-          When choosing which font to use as part of my design, I felt it was important for it to be easy to read but have an italian feel. 
-          I wanted the font to be appropriate so that I could use it for the logo text and also the main site text. This would then help maintain a nice continuity within the design and also help create the italian brand I was aiming for.
-
-          I have used Google to source the fonts and these are loaded within the head of the page.
-
-          The main font is [Otomanopee One](https://fonts.google.com/specimen/Otomanopee+One)
-    
-          The secondary font is [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#standard-styles)
 
      * ### <b>What I changed from my mockup designs</b>
 
@@ -128,30 +171,15 @@ A site designed to provide customers an interactive way to pre-order their pizza
           It would be useful to apply a validation to the time field within the form to prevent customers from placing a order for a collection time that has already passed for that day. This would prevent the store from having to call the customer to discuss the error within the order.
 ---
 
-* ## <b>User Stories</b>
-
-     This section is designed to generate possible scenarios of the typical end user that would use this website. 
-     This will help ensure end user requirements are designed into the website.
-
-     - When I visit the site, I want to know that I have landed on the correct site that I intended to visit.
-
-     - I need to be able to navigate to the key elements of the site quickly.
-
-     - I consider Pizza to be a fast food service, and its important that I can quickly get to the point of ordering on the site. I often like to order a pizza when on the commute home from work and to collect it on the way. 
-
-     - When out of town or visiting a friend, it's important that I am able to see if there are any stores nearby and the opening hours for that store.
-
-     - Most businesses now have a strong online presence within social media. Often using their social media platforms to promote new items or special offers. Being able to link to the business's social media is very useful.
-
----
-
 * ## <b>Key Components</b>
 
-     * ### <b>Frameworks, Programmes and Libraries:</b>
-
+     * ### <b>Languages Used</b>
           *   [HTML5](https://en.wikipedia.org/wiki/HTML5)
           *   [CSS](https://en.wikipedia.org/wiki/CSS)
           *   [Javascript](https://www.javascript.com/)
+
+     * ### <b>Frameworks, Programmes and Libraries:</b>
+
           *   [JQuery](https://jquery.com/) - Used to simplify and shorten some Javascript commands.
           *   [Bootstrap](https://getbootstrap.com/) - Used for layouts, styling and custom components such as navigation bar or modals.
           *   [Fontawesome](https://fontawesome.com/) - Used for generating the pizza icon's for the titles.
@@ -258,7 +286,7 @@ A site designed to provide customers an interactive way to pre-order their pizza
           The script is formatted as follows: src="https://maps.googleapis.com/maps/api/js?key= ENTER YOUR KEY HERE.
 ----
 
-* ## <b>Problems</b> 
+* ## <b>Problems During Development</b> 
 
      <b>Page Background</b>
 
@@ -274,6 +302,13 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
      Despite using Bootstrap as part of the site and also using 'vw' units for the sizing, the pizza images were very difficult to make responsive. The pizza images are all generated as layers for each item, and when I used Bootstrap to try to keep the images responsive, the layers ended up being scattered accross the site.
      To resolve the issue, I had to create individual media queries for several screen widths in order to make sure the images stack correctly.
+
+* ## <b>Known Bugs</b> 
+
+     As the layered images for the pizza order form are all loaded upon page loading, these have restricted the performance of the loading of the website. Although the site still scores quite high, I intend to find an alternative method in the future to reduce the load times.
+
+     The layered images were also difficult to maintain responsive design for all widths.
+     I have coded individual media queries to maintain the images, however when sweeping through the page dimensions using the developer tab within Google, the images can sometimes position slightly off centered to the pizza.
 
 ----
 
@@ -355,8 +390,6 @@ A site designed to provide customers an interactive way to pre-order their pizza
 
           <img src="./assets/images/readme/responsive-design.png" alt="Responsive Design"/>
 
-
-
      *   ###  <b>Browser Compatibility</b>
           
           <b>Google Chrome</b>
@@ -413,53 +446,50 @@ A site designed to provide customers an interactive way to pre-order their pizza
     
                * First Time Visitors, should be able to understand the purpose and reason for the site.
 
-                    <i>When visitors land at the site, they are presented with a large logo for the business and shown the custom form to order their pizza.</i>
+                    > When visitors land at the site, they are presented with a large logo for the business and shown the custom form to order their pizza.
 
                * First Time Visitors, should be able to easily find the navigation links.    
 
-                    <i>To follow the natural behavior of most websites, the navigation bar is located at the top of the site and is in a fixed position regardless of where the user scrolls to. This makes sure the user is able to interact with the navigation bar regardless of where they are on the page.
-                    For mobile users, the menu bar collapses and displays a 'hamburger symbol' and when clicked, an expanded version of the menu is displayed. This helps make sure the content is always visible to the user as well as making a full size menu available on all screen sizes.</i>
+                    > To follow the natural behavior of most websites, the navigation bar is located at the top of the site and is in a fixed position regardless of where the user scrolls to. This makes sure the user is able to interact with the navigation bar regardless of where they are on the page. For mobile users, the menu bar collapses and displays a 'hamburger symbol' and when clicked, an expanded version of the menu is displayed. This helps make sure the content is always visible to the user as well as making a full size menu available on all screen sizes.
 
                * First Time Visitors, should be able to interact with the site upon landing on the site.
 
-                    <i>The home section of the site contains the main function of the site. Users are instantly able to interact with a the custom pizza form that displays an image of their custom made pizza as they interact with the form.</i>
+                    > The home section of the site contains the main function of the site. Users are instantly able to interact with a the custom pizza form that displays an image of their custom made pizza as they interact with the form.
 
-                    <img src="./assets/images/readme/marios-index-page.png" alt="Mario's Index Page"/>
+                 <img src="./assets/images/readme/marios-index-page.png" alt="Mario's Index Page"/>
         
 
           * #### <b>Returning Visitor Goals</b>
 
                * Returning Visitors, should be able to quickly access the 'build a pizza' element to pre order their pizza.
 
-                    <i>When the customers land on the site, the first section of the site they see is the build a pizza form. Customers can begin filling in the form without needing to scroll down the page to begin.</i>
+                    > When the customers land on the site, the first section of the site they see is the build a pizza form. Customers can begin filling in the form without needing to scroll down the page to begin.
 
                <img src="./assets/images/readme/build-a-pizza.png" alt="Build A Pizza Example"/>
 
                * Returning Visitors, should be able to find where all the stores are located.
 
-                    <i>In the Store Locations section, there is a map with multiple markers showing where all the stores are located. When the user clicks one of the markers, an information block opens with all the key store information. There is also custom markers to help brand the map with the store logo.</i>
+                    > In the Store Locations section, there is a map with multiple markers showing where all the stores are located. When the user clicks one of the markers, an information block opens with all the key store information. There is also custom markers to help brand the map with the store logo.
 
-                    <img src="./assets/images/readme/map.png" alt="Store Location Map"/>
+               <img src="./assets/images/readme/map.png" alt="Store Location Map"/>
 
                * Returning Visitors, should have an easy way to contact the stores and in some cases, a specific store. Visitors should also be able to find social links to engage within the online community.
 
-                    <i> Customers are able to contact the head office using the main contact information at the bottom of the page. The footer contains the head office address, telephone number and also all the social profiles for the business.
+                    > Customers are able to contact the head office using the main contact information at the bottom of the page. The footer contains the head office address, telephone number and also all the social     profiles for the business.Information for specific stores is detailed when the store markers are clicked at the store location section.
 
-                    Information for specific stores is detailed when the store markers are clicked at the store location section.</i>
-
-                    <img src="./assets/images/readme/footer.png" alt="Footer Contact Information"/>
+               <img src="./assets/images/readme/footer.png" alt="Footer Contact Information"/>
 
                * Returning Visitors, should be able to find the opening hours and contact information of any store.
 
-                    <i>Key information for each store is displayed when the visitor clicks on the marker for the chosen store.</i>
+                    > Key information for each store is displayed when the visitor clicks on the marker for the chosen store.
 
-                    <img src="./assets/images/readme/infobox.png" alt="Specific Store Information Box"/>
+               <img src="./assets/images/readme/infobox.png" alt="Specific Store Information Box"/>
 
                * Returning Visitors, should be able to find out more information about the history of the store/brand.
 
-                    <i>The history of the family business is found in its own section on the site. This section can be accessed using the navigation link or by scrolling down the site.</i>
+                    > The history of the family business is found in its own section on the site. This section can be accessed using the navigation link or by scrolling down the site.
 
-                    <img src="./assets/images/readme/about.png" alt="About Section"/>
+               <img src="./assets/images/readme/about.png" alt="About Section"/>
 
 * ## <b>Credits</b>
 
@@ -506,5 +536,11 @@ A site designed to provide customers an interactive way to pre-order their pizza
           *   <b>Multi Platform Mockup Image</b>
 
                The multi-platform mockup image found within this README file was generated using [Am I Responsive](http://ami.responsivedesign.is/#)
+
+     *   ###  <b>Acknowledgements</b>
+
+          * My mentor for helpful feedback and constructive calls to help progress through the project.
+
+          * The slack community for the support and feedback.
 
 ---
