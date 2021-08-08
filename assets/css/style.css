@@ -104,12 +104,8 @@ a.navbar-brand {
 
 /* Pizza Form */
 
-#home {
-  margin-top: 200px;
-}
-
 #build-pizza-section {
-  padding: 2em;
+  padding: 0em 2em 2em 2em;
 }
 
 .pizza-form-heading {
@@ -225,7 +221,38 @@ footer a:hover {
 
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
+
+  #home {
+    margin-top: 100px;
+  }
+
+
+  #logo img {
+    width: 10em;
+  }
+
+  .section-heading {
+    font-size: 1.8em;
+    padding: 0;
+  }
+
+  .pizza-base,
+  .pizza-group {
+    width: 14em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+  }
+
+  .sauceImages img,
+  .cheeseImages img {
+    width: 14em;
+    padding: 0;
+    margin-left: 0em;
+  }
+}
+
+@media only screen and (min-width: 375px) {
 
   #home {
     margin-top: 100px;
@@ -329,10 +356,6 @@ footer a:hover {
 
 @media only screen and (min-width: 600px) {
 
-  #logo img {
-    width: 16em;
-  }
-
   .section-heading {
     font-size: 2em;
     padding: 0;
@@ -363,6 +386,10 @@ footer a:hover {
 
   #home {
     margin-top: 150px;
+  }
+
+  #logo img {
+    width: 16em;
   }
 
   .pizza-base,
