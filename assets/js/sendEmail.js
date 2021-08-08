@@ -88,9 +88,9 @@ function sendMail(pizzaForm) {
       function (response) {
         console.log("SUCCESS", response);
         alert("Thank You For Your Order")
-        document.getElementById("size").value = "0";
-        document.getElementById("crust").value = "0";
-        document.getElementById("sauceType").value = "0";
+        document.getElementById("size").value = "";
+        document.getElementById("crust").value = "";
+        document.getElementById("sauceType").value = "";
         document.getElementById("cheeseType").value = "000";
         document.getElementById("Pepperoni").checked = false;
         document.getElementById("Chillies").checked = false;
@@ -108,6 +108,7 @@ function sendMail(pizzaForm) {
         document.getElementById("emailaddress").value = "";
         document.getElementById("store").value = "0";
         document.getElementById("time").value = "00:00";
+        $("#pizzaTotalCost").text("")      
       },
       function (error) {
         console.log("FAILED", error);

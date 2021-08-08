@@ -170,9 +170,9 @@ function pizzaReset() {
     $(img_9).hide();
     $(img_10).hide();
     $(img_11).hide();
-    document.getElementById("size").value = "0";
-    document.getElementById("crust").value = "0";
-    document.getElementById("sauceType").value = "0";
+    document.getElementById("size").value = "";
+    document.getElementById("crust").value = "";
+    document.getElementById("sauceType").value = "";
     document.getElementById("cheeseType").value = "000";
     document.getElementById("Pepperoni").checked = false;
     document.getElementById("Chillies").checked = false;
@@ -190,4 +190,5 @@ function pizzaReset() {
     document.getElementById("emailaddress").value = "";
     document.getElementById("store").value = "0";
     document.getElementById("time").value = "00:00";
+    $("#pizzaTotalCost").text("")
 }
