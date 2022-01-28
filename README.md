@@ -4,7 +4,7 @@
 
 This is the README file for my Code Institute MS2 project site, Mario's Pizza
 
-[View the live site here](https://tomossmith.github.io/mariospizza/index.html)
+[View the live site here](https://tomossmith.github.io/MS2-MariosPizza/)
 ----
 
 <center><img src="./assets/images/readme/responsive-design.png" alt="Mario's Pizza - Website Display"></center>
